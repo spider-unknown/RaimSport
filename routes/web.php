@@ -24,8 +24,10 @@ Route::get('/config/locale/{locale}', ['as' => 'locale', 'uses' => 'Localization
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
 Route::group(['middleware' => ['auth']], function () {
+    Route::get('/home', 'HomeController@index')->name('home');
     Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
         Route::get('branches', ['uses' => 'BranchController@index', 'as' => 'branch.index']);
         Route::get('branch/create', ['uses' => 'BranchController@create', 'as' => 'branch.create']);
