@@ -1,3 +1,5 @@
+<script src="{{asset('js/toastr.js')}}"></script>
+
 <script src="{{asset('admin/js/core/jquery.min.js')}}"></script>
 <script src="{{asset('admin/js/core/popper.min.js')}}"></script>
 <script src="{{asset('admin/js/core/bootstrap-material-design.min.js')}}"></script>
@@ -217,5 +219,24 @@
         md.initDashboardPageCharts();
 
     });
+</script>
+<script>
+    toastr.options.closeButton = true;
+    @if(Session::has('success'))
+    toastr.success("{{Session::get('success')}}");
+    @endif
+
+    @if(Session::has('info'))
+    toastr.info("{{Session::get('info')}}");
+    @endif
+
+    @if(Session::has('error'))
+    toastr.error("{{Session::get('error')}}");
+    @endif
+
+    @if(Session::has('warning'))
+    toastr.info("{{Session::get('warning')}}");
+    @endif
+
 </script>
 @yield('script')

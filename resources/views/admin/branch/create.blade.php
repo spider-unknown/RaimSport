@@ -9,7 +9,7 @@
                         <p class="card-category">Ветки для меню</p>
                     </div>
                     <div class="card-body">
-                        <form method="post" action="{{route('branch.store')}}">
+                        <form method="post" action="{{route('branch.store')}}" enctype="multipart/form-data">
                             @include('admin.branch.form')
                         </form>
                     </div>

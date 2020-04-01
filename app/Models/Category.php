@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Category extends Model
 {
     public const DEFAULT_RESOURCE_DIRECTORY = 'images/categories';
-
     use SoftDeletes;
 
     protected $fillable = [

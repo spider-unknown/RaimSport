@@ -15,12 +15,6 @@
             </a>
         </li>
         <li class="nav-item ">
-            <a class="nav-link" href="{{route('category.index')}}">
-                <i class="material-icons">content_paste</i>
-                <p>Проекты</p>
-            </a>
-        </li>
-        <li class="nav-item ">
             <a class="nav-link" href="{{route('branch.index')}}">
                 <i class="material-icons">library_books</i>
                 <p>Ветки</p>
@@ -30,6 +24,12 @@
             <a class="nav-link" href="{{route('category.index')}}">
                 <i class="material-icons">bubble_chart</i>
                 <p>Категории</p>
+            </a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="{{route('project.index')}}">
+                <i class="material-icons">book</i>
+                <p>Проекты</p>
             </a>
         </li>
     </ul>

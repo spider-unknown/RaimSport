@@ -3,6 +3,7 @@
 
 <head>
     @include('admin.layouts.parts.head');
+    @yield("styles")
 </head>
 
 <body class="">
@@ -22,5 +23,7 @@
     </div>
 </div>
 @include('admin.layouts.parts.javascript')
+@yield("scripts")
+
 </body>
 </html>

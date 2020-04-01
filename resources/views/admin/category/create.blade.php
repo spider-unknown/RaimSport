@@ -9,7 +9,7 @@
                         <p class="card-category">Добавить категорию</p>
                     </div>
                     <div class="card-body">
-                        <form method="post" action="{{route('category.store')}}">
+                        <form method="post" action="{{route('category.store')}}" enctype="multipart/form-data">
                             @include('admin.category.form')
                         </form>
                     </div>

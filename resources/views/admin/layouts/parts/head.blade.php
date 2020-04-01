@@ -13,5 +13,11 @@
 <link href="{{asset('admin/css/material-dashboard.css?v=2.1.2')}}" rel="stylesheet" />
 <!-- CSS Just for demo purpose, don't include it in your project -->
 <link href="{{asset('admin/demo/demo.css')}}" rel="stylesheet" />
+<link rel="stylesheet" href="{{asset('admin/styles/common.css')}}">
+
+
+
+
+
 @yield('styles')
 
