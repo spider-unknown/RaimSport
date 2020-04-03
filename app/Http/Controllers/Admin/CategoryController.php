@@ -77,7 +77,7 @@ class CategoryController extends WebBaseController
 
         $category->update([
             'name' => $request->name,
-            'image_path' => $path,
+            'img_path' => $path,
             'branch_id' => $request->branch_id,
             'description' => $request->description,
         ]);

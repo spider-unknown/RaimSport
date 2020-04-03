@@ -27,11 +27,11 @@
                                         <td>{{$project->name}}</td>
                                         <td>{{$project->category->name}}</td>
                                         <td>
-                                            <a class="btn btn-outline-primary mb-2 "
+                                            <a class="btn btn-outline-primary btn-sm mb-2 "
                                                href="{{route('project.edit', ['id' => $project->id])}}">
                                                 <i class="material-icons md-12">edit</i>
                                             </a>
-                                            <a class="btn btn-outline-primary mb-2 "
+                                            <a class="btn btn-outline-primary btn-sm mb-2 "
                                                href="{{route('gallery.index', ['project_id' => $project->id])}}">
                                                 <i class="material-icons md-12">bookmark</i>
                                             </a>

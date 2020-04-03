@@ -4,7 +4,7 @@
         <label class="bmd-label-floating">Название</label>
         <input type="text" class="form-control"
                name="name"
-               value="{{$project ? $project->name : old('name')}}"
+               value="{{$product ? $product->name : old('name')}}"
                id="name">
     </div>
     <div class="col-md-6">
@@ -23,9 +23,20 @@
                   rows="5"
                   id="description"
                   name="description">
-                    {{$project ? $project->description : old('description')}}</textarea>
+                    {{$product ? $product->description : old('description')}}</textarea>
     </div>
 </div>
+<div class="row">
+    <div class="col-md-1">
+        <label class="bmd-label-floating">Цена</label>
+        <input type="number" class="form-control"
+               name="price"
+               min="1"
+               value="{{$product ? $product->price : old('price')}}"
+               id="price">
+    </div>
+</div>
+
 <div class="row">
     <div class="col-md-8">
         <label class="bmd-label-floating" for="file">Пожалуйста выберите фото</label>
@@ -47,7 +58,7 @@
     </div>
 </div>
 <button type="submit" class="btn btn-primary pull-right">Сохранить<i class="material-icons">check</i> </button>
-<a href="{{route('project.index')}}" type="button" class="mb-2 btn btn-medium btn-primary mr-1">
+<a href="{{route('product.index')}}" type="button" class="mb-2 btn btn-medium btn-primary mr-1">
     <i class="material-icons md-12">arrow_back</i> Назад
 </a>
 <div class="clearfix"></div>

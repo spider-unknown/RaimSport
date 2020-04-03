@@ -32,5 +32,11 @@
                 <p>Проекты</p>
             </a>
         </li>
+        <li class="nav-item ">
+            <a class="nav-link" href="{{route('product.index')}}">
+                <i class="material-icons">gift</i>
+                <p>Продукты</p>
+            </a>
+        </li>
     </ul>
 </div>

@@ -11,6 +11,9 @@ namespace App\Services\impl;
 
 use App\Services\FileService;
 use App\Utils\StaticConstants;
+use FFMpeg\Coordinate\TimeCode;
+use FFMpeg\FFMpeg;
+use FFMpeg\FFProbe;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Str;
 //use FFMpeg\FFMpeg;
@@ -26,10 +29,6 @@ class FileServiceImpl implements FileService
         return $imageFullPath;
     }
 
-
-
-
-
     public function remove(string $path)
     {
         if ($path != StaticConstants::DEFAULT_IMAGE) {
@@ -41,10 +40,6 @@ class FileServiceImpl implements FileService
         return false;
     }
 
-
-
-
-
     public function updateWithRemoveOrStore(UploadedFile $image, string $path, string $oldFilePath = null): string
     {
         if ($oldFilePath && $oldFilePath != StaticConstants::DEFAULT_IMAGE) {
@@ -52,10 +47,6 @@ class FileServiceImpl implements FileService
         }
         return $this->store($image, $path);
     }
-
-
-
-
 
 
 

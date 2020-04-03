@@ -39,7 +39,7 @@
                                             @endif
                                         </td>
                                         <td>
-                                            <a class="btn btn-outline-primary mb-2 "
+                                            <a class="btn btn-outline-primary btn-sm mb-2 "
                                                href="{{route('branch.edit', ['id' => $branch->id])}}">
                                                 <i class="material-icons md-12">edit</i>
                                             </a>
@@ -47,11 +47,11 @@
                                                   action="{{route('branch.visible', ['id' => $branch->id])}}">
                                                 {{csrf_field()}}
                                                 @if($branch->is_visible)
-                                                    <button class="mb-2 btn  btn-outline-success mr-1" type="submit">
+                                                    <button class="mb-2 btn  btn-outline-success btn-sm mr-1" type="submit">
                                                         <i class="material-icons md-12">remove_red_eye</i>
                                                     </button>
                                                 @else
-                                                    <button class="mb-2 btn  btn-outline-danger mr-1" type="submit">
+                                                    <button class="mb-2 btn  btn-outline-danger btn-sm mr-1" type="submit">
                                                         <i class="material-icons md-12">remove_red_eye</i>
                                                     </button>
                                                 @endif

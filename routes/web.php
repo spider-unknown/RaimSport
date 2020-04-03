@@ -54,6 +54,17 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('gallery/{project_id}', ['uses' => 'GalleryController@index', 'as' => 'gallery.index'])->where('project_id', '[0-9]+');
         Route::get('gallery/create/{project_id}', ['uses' => 'GalleryController@create', 'as' => 'gallery.create'])->where('project_id', '[0-9]+');
         Route::post('gallery/store/{project_id}', ['uses' => 'GalleryController@store', 'as' => 'gallery.store'])->where('project_id', '[0-9]+');
+        Route::get('gallery/edit/{id}', ['uses' => 'GalleryController@edit', 'as' => 'gallery.edit'])->where('id', '[0-9]+');
+        Route::post('gallery/update/{id}', ['uses' => 'GalleryController@update', 'as' => 'gallery.update'])->where('id', '[0-9]+');
+        Route::delete('gallery/delete/{id}', ['uses' => 'GalleryController@destroy', 'as' => 'gallery.delete'])->where('id', '[0-9]+');
+
+
+        Route::get('products', ['uses' => 'ProductController@index', 'as' => 'product.index']);
+        Route::get('product/create', ['uses' => 'ProductController@create', 'as' => 'product.create']);
+        Route::post('product/store', ['uses' => 'ProductController@store', 'as' => 'product.store']);
+        Route::get('product/edit/{id}', ['uses' => 'ProductController@edit', 'as' => 'product.edit'])->where('id', '[0-9]+');
+        Route::post('product/update/{id}', ['uses' => 'ProductController@update', 'as' => 'product.update'])->where('id', '[0-9]+');
+        Route::delete('product/delete/{id}', ['uses' => 'ProductController@destroy', 'as' => 'product.delete'])->where('id', '[0-9]+');
 
     });
 });

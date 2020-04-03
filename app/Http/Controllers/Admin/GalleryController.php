@@ -55,31 +55,48 @@ class GalleryController extends WebBaseController
 
     public function edit($id)
     {
-        $project = Project::findOrFail($id);
-        $categories = Category::all();
-        return view('admin.project.edit', compact('project', 'categories'));
+        $gallery = Gallery::findOrFail($id);
+        $project_id = $gallery->project_id;
+        return view('admin.project.gallery.edit', compact('gallery','project_id'));
 
     }
 
-    public function update($id, ProjectStoreAndUpdateRequest $request)
+    public function update($id, GalleryStoreAndUpdateRequest $request)
     {
-        $project = Project::findOrFail($id);
-        $path = $project->image_path;
+        $gallery = Gallery::findOrFail($id);
+        $path = $gallery->image_path;
+
         if ($request->file('image')) {
             $path = $this->fileService
-                ->updateWithRemoveOrStore($request->file('image'), Category::DEFAULT_RESOURCE_DIRECTORY, $path);
+                ->updateWithRemoveOrStore($request->file('image'), Gallery::DEFAULT_RESOURCE_DIRECTORY, $path);
         }
 
 
-        $project->update([
-            'name' => $request->name,
-            'image_path' => $path,
-            'category_id' => $request->category_id,
-            'description' => $request->description,
+        $gallery->update([
+
+            'img_path' => $path,
+
 
         ]);
         $this->edited();
-        return redirect()->route('project.index');
+        return redirect()->route('gallery.index',['project_id'=>$gallery->project_id]);
+    }
+
+    public function destroy($id)
+    {
+        $gallery = Gallery::find($id);
+        if (!$gallery ) {
+            $this->notFound();
+            return redirect()->back();
+        }
+
+        if ($gallery ->img_path) {
+            $this->fileService->remove($gallery ->img_path);
+        }
+        $gallery->delete();
+
+        $this->deleted();
+        return redirect()->back();
     }
 
 }

@@ -40,7 +40,7 @@ class ProjectController extends WebBaseController
     public function store(ProjectStoreAndUpdateRequest $request) {
         $path = StaticConstants::DEFAULT_IMAGE;
         if ($request->file('image')) {
-            $path = $this->fileService->store($request->file('image'), Category::DEFAULT_RESOURCE_DIRECTORY);
+            $path = $this->fileService->store($request->file('image'), Project::DEFAULT_RESOURCE_DIRECTORY);
         }
 
         Project::create([
@@ -65,16 +65,17 @@ class ProjectController extends WebBaseController
     public function update($id, ProjectStoreAndUpdateRequest $request)
     {
         $project = Project::findOrFail($id);
-        $path = $project->image_path;
+        $path = $project->img_path;
+
         if ($request->file('image')) {
             $path = $this->fileService
-                ->updateWithRemoveOrStore($request->file('image'), Category::DEFAULT_RESOURCE_DIRECTORY, $path);
+                ->updateWithRemoveOrStore($request->file('image'), Project::DEFAULT_RESOURCE_DIRECTORY, $path);
         }
 
 
         $project->update([
             'name' => $request->name,
-            'image_path' => $path,
+            'img_path' => $path,
             'category_id' => $request->category_id,
             'description' => $request->description,
 
