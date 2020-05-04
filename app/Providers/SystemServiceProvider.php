@@ -7,7 +7,6 @@ namespace App\Providers;
 use Illuminate\Support\ServiceProvider;
 use App\Services\impl\FileServiceImpl;
 
-
 class SystemServiceProvider extends ServiceProvider
 {
     /**
