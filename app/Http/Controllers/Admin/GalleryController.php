@@ -64,7 +64,7 @@ class GalleryController extends WebBaseController
     public function update($id, GalleryStoreAndUpdateRequest $request)
     {
         $gallery = Gallery::findOrFail($id);
-        $path = $gallery->image_path;
+        $path = $gallery->img_path;
 
         if ($request->file('image')) {
             $path = $this->fileService

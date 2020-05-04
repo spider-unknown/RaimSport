@@ -68,7 +68,7 @@ class CategoryController extends WebBaseController
     public function update($id, CategoryStoreAndUpdateRequest $request)
     {
         $category = Category::findOrFail($id);
-        $path = $category->image_path;
+        $path = $category->img_path;
         if ($request->file('image')) {
             $path = $this->fileService
                 ->updateWithRemoveOrStore($request->file('image'), Category::DEFAULT_RESOURCE_DIRECTORY, $path);

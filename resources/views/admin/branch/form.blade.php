@@ -7,6 +7,7 @@
                        name="name"
                        value="{{$branch ? $branch->name : old('name')}}"
                        id="name"
+                       required
                 >
             </div>
         </div>
@@ -17,6 +18,7 @@
                        class="form-control"
                        name="name_in_menu"
                        value="{{$branch ? $branch->name_in_menu : old('name_in_menu')}}"
+                       required
                     >
             </div>
         </div>
@@ -26,7 +28,7 @@
             <div class="form-group">
                 <div class="form-group">
                     <label class="bmd-label-floating" for="description">Описание</label>
-                    <textarea class="form-control" rows="5" id="description" name="description">
+                    <textarea class="form-control" rows="5" id="description" name="description" required>
                         {{$branch ? $branch->description : old('description')}}
                     </textarea></textarea>
 

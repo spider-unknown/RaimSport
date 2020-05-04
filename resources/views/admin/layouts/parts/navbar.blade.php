@@ -54,7 +54,13 @@
 {{--                    <a class="dropdown-item" href="#">Profile</a>--}}
 {{--                    <a class="dropdown-item" href="#">Settings</a>--}}
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Log out</a>
+                    <form action="{{route('logout')}}" method="post">
+                        {{csrf_field()}}
+                        <button type="submit" class="dropdown-item text-danger" href="{{route('logout')}}">
+                             Log out
+                        </button>
+                    </form>
+
                 </div>
             </li>
         </ul>

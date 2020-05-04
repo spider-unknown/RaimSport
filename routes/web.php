@@ -24,9 +24,15 @@ Route::get('/config/locale/{locale}', ['as' => 'locale', 'uses' => 'Localization
 
 Auth::routes();
 
+Route::group(['namespace' => 'Auth'], function () {
 
+
+    Route::post('logout', ['as' => 'logout', 'uses' => 'LoginController@logout']);
+
+});
 
 Route::group(['middleware' => ['auth']], function () {
+
     Route::get('/home', 'HomeController@index')->name('home');
     Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
         Route::get('branches', ['uses' => 'BranchController@index', 'as' => 'branch.index']);
@@ -50,6 +56,8 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('project/store', ['uses' => 'ProjectController@store', 'as' => 'project.store']);
         Route::get('project/edit/{id}', ['uses' => 'ProjectController@edit', 'as' => 'project.edit'])->where('id', '[0-9]+');
         Route::post('project/update/{id}', ['uses' => 'ProjectController@update', 'as' => 'project.update'])->where('id', '[0-9]+');
+        Route::post('project/visible/{id}', ['uses' => 'Project``Controller@visibleChange', 'as' => 'project.visible'])->where('id', '[0-9]+');
+
 
         Route::get('gallery/{project_id}', ['uses' => 'GalleryController@index', 'as' => 'gallery.index'])->where('project_id', '[0-9]+');
         Route::get('gallery/create/{project_id}', ['uses' => 'GalleryController@create', 'as' => 'gallery.create'])->where('project_id', '[0-9]+');

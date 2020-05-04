@@ -17,6 +17,7 @@
                                     <th>ID</th>
                                     <th>Название</th>
                                     <th>Категория</th>
+                                    <th>Видимость</th>
                                     <th>Действия</th>
                                 </tr>
                                 </thead>
@@ -27,6 +28,30 @@
                                         <td>{{$project->name}}</td>
                                         <td>{{$project->category->name}}</td>
                                         <td>
+                                            @if($project->is_visible)
+                                                <span class="text-success">
+                                            Виден
+                                        </span>
+                                            @else
+                                                <span class="text-danger">
+                                            Не виден
+                                        </span>
+                                            @endif
+                                        </td>
+                                        <td>
+                                            <form class="d-inline" method="post"
+                                                  action="{{route('project.visible', ['id' => $project->id])}}">
+                                                {{csrf_field()}}
+                                                @if($project->is_visible)
+                                                    <button class="mb-2 btn  btn-outline-success btn-sm mr-1" type="submit">
+                                                        <i class="material-icons md-12">remove_red_eye</i>
+                                                    </button>
+                                                @else
+                                                    <button class="mb-2 btn  btn-outline-danger btn-sm mr-1" type="submit">
+                                                        <i class="material-icons md-12">remove_red_eye</i>
+                                                    </button>
+                                                @endif
+                                            </form>
                                             <a class="btn btn-outline-primary btn-sm mb-2 "
                                                href="{{route('project.edit', ['id' => $project->id])}}">
                                                 <i class="material-icons md-12">edit</i>

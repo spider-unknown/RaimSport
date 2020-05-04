@@ -83,4 +83,15 @@ class ProjectController extends WebBaseController
         $this->edited();
         return redirect()->route('project.index');
     }
+
+    public function visibleChange($id)
+    {
+
+        $project = Project::findOrFail($id);
+        if ($project->is_visible) $project->is_visible = false;
+        else $project->is_visible = true;
+        $project->save();
+        $this->edited();
+        return redirect()->route('project.index');
+    }
 }

@@ -7,6 +7,7 @@
                    name="name"
                    value="{{$category ? $category->name : old('name')}}"
                    id="name"
+                   required
             >
 
     </div>
@@ -29,6 +30,7 @@
                           rows="5"
                           id="description"
                           name="description"
+                          required
 
                 >{{$category ? $category->description : old('description')}}</textarea>
             </div>

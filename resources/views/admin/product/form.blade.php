@@ -5,7 +5,8 @@
         <input type="text" class="form-control"
                name="name"
                value="{{$product ? $product->name : old('name')}}"
-               id="name">
+               id="name"
+               required>
     </div>
     <div class="col-md-6">
         <label class="bmd-label-floating" for="category_id">Категория</label>
@@ -22,7 +23,8 @@
         <textarea class="form-control"
                   rows="5"
                   id="description"
-                  name="description">
+                  name="description"
+                  required>
                     {{$product ? $product->description : old('description')}}</textarea>
     </div>
 </div>
@@ -33,7 +35,8 @@
                name="price"
                min="1"
                value="{{$product ? $product->price : old('price')}}"
-               id="price">
+               id="price"
+               required>
     </div>
 </div>
 

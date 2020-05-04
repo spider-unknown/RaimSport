@@ -14,7 +14,8 @@ class Project extends Model
         'category_id',
         'name',
         'description',
-        'img_path'
+        'img_path',
+        'is_visible'
 
     ];
 
