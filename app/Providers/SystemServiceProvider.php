@@ -3,9 +3,10 @@
 namespace App\Providers;
 
 
-use App\Services\impl\FileServiceImpl;
 
 use Illuminate\Support\ServiceProvider;
+use App\Services\impl\FileServiceImpl;
+
 
 class SystemServiceProvider extends ServiceProvider
 {
