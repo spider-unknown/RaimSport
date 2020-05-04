@@ -22,7 +22,8 @@
         <textarea class="form-control"
                   rows="5"
                   id="description"
-                  name="description">
+                  name="description"
+        >
                     {{$project ? $project->description : old('description')}}</textarea>
     </div>
 </div>

@@ -14,7 +14,12 @@
 <!-- CSS Just for demo purpose, don't include it in your project -->
 <link href="{{asset('admin/demo/demo.css')}}" rel="stylesheet" />
 <link rel="stylesheet" href="{{asset('admin/styles/common.css')}}">
-
+<script src="https://cdn.tiny.cloud/1/14uulxxzlh61dkwru6aw4aa4xwdnkpaqjnyd2hqyw9cqwsa5/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+<script>
+    tinymce.init({
+        selector: '#description'
+    });
+</script>
 
 
 
