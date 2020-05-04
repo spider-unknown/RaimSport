@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Branch;
+use App\Models\Category;
+use App\Models\Product;
+use App\Models\Project;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,7 +28,22 @@ class HomeController extends Controller
     public function index()
     {
         $this->middleware('auth');
-        return view('admin.tables');
+
+        $projectsCount = Project::all()->count();
+        $categoriesCount = Category::all()->count();
+        $productsCount = Product::all()->count();
+        $branchesCount = Branch::all()->count();
+
+
+
+
+
+        return view('admin.tables', compact(
+            'productsCount',
+            'projectsCount',
+            'categoriesCount',
+            'branchesCount'
+        ));
     }
 
     public function welcome()
