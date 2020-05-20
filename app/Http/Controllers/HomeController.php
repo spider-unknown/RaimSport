@@ -33,11 +33,6 @@ class HomeController extends Controller
         $categoriesCount = Category::all()->count();
         $productsCount = Product::all()->count();
         $branchesCount = Branch::all()->count();
-
-
-
-
-
         return view('admin.tables', compact(
             'productsCount',
             'projectsCount',

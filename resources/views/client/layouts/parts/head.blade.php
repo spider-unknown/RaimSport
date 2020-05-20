@@ -1,25 +1,20 @@
-<title>Workout &mdash; Website Template by Colorlib</title>
+<title>Roofing - Free Bootstrap 4 Template by Colorlib</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
-<link rel="stylesheet" href="{{asset('client/fonts/icomoon/style.css')}}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="{{asset('client/css/bootstrap.min.css')}}">
-<link rel="stylesheet" href="{{asset('client/css/jquery-ui.css')}}">
+<link rel="stylesheet" href="{{asset('client/css/animate.css')}}">
+
 <link rel="stylesheet" href="{{asset('client/css/owl.carousel.min.css')}}">
 <link rel="stylesheet" href="{{asset('client/css/owl.theme.default.min.css')}}">
-<link rel="stylesheet" href="{{asset('client/css/owl.theme.default.min.css')}}">
-
-<link rel="stylesheet" href="{{asset('client/css/jquery.fancybox.min.css')}}">
+<link rel="stylesheet" href="{{asset('client/css/magnific-popup.css')}}">
 
 <link rel="stylesheet" href="{{asset('client/css/bootstrap-datepicker.css')}}">
+<link rel="stylesheet" href="{{asset('client/css/jquery.timepicker.css')}}">
 
-<link rel="stylesheet" href="{{asset('client/fonts/flaticon/font/flaticon.css')}}">
-
-<link rel="stylesheet" href="{{asset('client/css/aos.css')}}">
-<link href="{{asset('client/css/jquery.mb.YTPlayer.min.css')}}" media="all" rel="stylesheet" type="text/css">
-
+<link rel="stylesheet" href="{{asset('client/css/flaticon.css')}}">
 <link rel="stylesheet" href="{{asset('client/css/style.css')}}">
 @yield('styles')

@@ -1,1424 +1,705 @@
 @extends('client.layouts.client')
+
 @section('content')
-
-    <div class="intro-section" id="home-section" style="background-color: #ccc;">
+    <section class="ftco-section ftco-no-pt ftco-no-pb bg-light ftco-appointment">
         <div class="container">
-
-            <div class="row align-items-center">
-                <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
-                    <h1 class="mb-3">Fitness Help Me Feel Better</h1>
-                    <p class="lead mx-auto desc mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nisi minus perspiciatis optio, id deserunt.</p>
-                    <p class="text-center">
-                        <a href="#" class="btn btn-outline-white py-3 px-5">Get Started</a>
-                    </p>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="row justify-content-start py-5 pr-md-4">
+                        <div class="col-md-12 heading-section ftco-animate py-md-4">
+                            <h2 class="mb-4">We help more than 45 years installing your roof</h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+                                the Semantics, a large language ocean. A small river named Duden flows by their place
+                                and supplies it with the necessary regelialia. It is a paradisematic country, in which
+                                roasted parts of sentences fly into your mouth.</p>
+                            <div class="tabulation-2 mt-4">
+                                <ul class="nav nav-pills nav-fill d-md-flex d-block">
+                                    <li class="nav-item mb-md-0 mb-2">
+                                        <a class="nav-link active py-3" data-toggle="tab" href="#home1">Our Mission</a>
+                                    </li>
+                                    <li class="nav-item px-lg-2 mb-md-0 mb-2">
+                                        <a class="nav-link py-3" data-toggle="tab" href="#home2">Our Vision</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link py-3 mb-md-0 mb-2" data-toggle="tab" href="#home3">Our
+                                            Value</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content rounded mt-2">
+                                    <div class="tab-pane container p-0 active" id="home1">
+                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                            Consonantia, there live the blind texts. Separated they live in
+                                            Bookmarksgrove right at the coast of the Semantics, a large language
+                                            ocean.</p>
+                                    </div>
+                                    <div class="tab-pane container p-0 fade" id="home2">
+                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                            Consonantia, there live the blind texts. Separated they live in
+                                            Bookmarksgrove right at the coast of the Semantics, a large language
+                                            ocean.</p>
+                                    </div>
+                                    <div class="tab-pane container p-0 fade" id="home3">
+                                        <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                            Consonantia, there live the blind texts. Separated they live in
+                                            Bookmarksgrove right at the coast of the Semantics, a large language
+                                            ocean.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="bg-white">
+                        <div class="w-100 heading-title bg-primary text-center">
+                            <h2 class="mb-0">Get a Quote</h2>
+                        </div>
+                        <form action="#" class="appointment bg-white p-4 p-md-5">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="form-field">
+                                            <div class="select-wrap">
+                                                <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                                <select name="" id="" class="form-control">
+                                                    <option value="">Select Services</option>
+                                                    <option value="">Skylights</option>
+                                                    <option value="">Waterproofing</option>
+                                                    <option value="">Industrial Roofing</option>
+                                                    <option value="">Residential Roofing</option>
+                                                    <option value="">Gutter Cleaning</option>
+                                                    <option value="">Commercial Roofing</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-wrap">
+                                            <div class="icon"><span class="fa fa-calendar"></span></div>
+                                            <input type="text" class="form-control appointment_date" placeholder="Date">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="input-wrap">
+                                            <div class="icon"><span class="fa fa-clock-o"></span></div>
+                                            <input type="text" class="form-control appointment_time" placeholder="Time">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea name="" id="" cols="30" rows="7" class="form-control"
+                                                  placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-
         </div>
-    </div>
+    </section>
 
-
-    <div class="site-section">
+    <section class="ftco-counter" id="section-counter">
         <div class="container">
-
-            <div class="row justify-content-center text-center mb-5">
-                <div class="col-md-8 section-heading">
-                    <span class="subheading">Stay Healthy</span>
-                    <h2 class="heading mb-3">Setup Your Body With Workout</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, mollitia amet nihil!
-                        Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                </div>
-            </div>
-
-            <!-- Slider -->
-            <div class="owl-carousel nonloop-block-14 block-14" data-aos="fade">
-                <div class="slide">
-                    <div class="ftco-feature-1">
-                        <span class="icon flaticon-fit"></span>
-                        <div class="ftco-feature-1-text">
-                            <h2>Consectuetur elit</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis quo, cumque fuga.</p>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 text-center">
+                        <div class="text">
+                            <div class="icon"><span class="fa fa-calendar"></span></div>
+                            <strong class="number" data-number="45">0</strong>
+                            <span>Years of Experienced</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="slide">
-                    <div class="ftco-feature-1">
-                        <span class="icon flaticon-gym-1"></span>
-                        <div class="ftco-feature-1-text">
-                            <h2>Veritatis quo</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quasi quia iure unde perferendis!</p>
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 text-center">
+                        <div class="text">
+                            <div class="icon"><span class="fa fa-briefcase"></span></div>
+                            <strong class="number" data-number="8500">0</strong>
+                            <span>Project completed</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="slide">
-                    <div class="ftco-feature-1">
-                        <span class="icon flaticon-gym"></span>
-                        <div class="ftco-feature-1-text">
-                            <h2>Perspiciatis modi</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi tempora nostrum, perspiciatis modi eaque!</p>
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 text-center">
+                        <div class="text">
+                            <div class="icon"><span class="fa fa-users"></span></div>
+                            <strong class="number" data-number="2342">0</strong>
+                            <span>Happy Clients</span>
                         </div>
                     </div>
                 </div>
-
-                <div class="slide">
-                    <div class="ftco-feature-1">
-                        <span class="icon flaticon-vegetables"></span>
-                        <div class="ftco-feature-1-text">
-                            <h2>Magnam ab eius</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, magnam ab eius autem est.</p>
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+                    <div class="block-18 text-center">
+                        <div class="text">
+                            <div class="icon"><span class="fa fa-bar-chart"></span></div>
+                            <strong class="number" data-number="30">0</strong>
+                            <span>Business Partners</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="slide">
-                    <div class="ftco-feature-1">
-                        <span class="icon flaticon-fruit-juice"></span>
-                        <div class="ftco-feature-1-text">
-                            <h2>Impedit alias</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis beatae impedit alias ad unde?</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="slide">
-                    <div class="ftco-feature-1">
-                        <span class="icon flaticon-stationary-bike"></span>
-                        <div class="ftco-feature-1-text">
-                            <h2>Recusandae nisi</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, minima quod optio recusandae nisi.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
-    <div class="bgimg" style="background-image: url('{{asset('client/images/bg_2.jpg')}}');"  data-stellar-background-ratio="0.5">
-
-        <div class="container">
-            <div class="row align-items-center justify-content-center text-center">
-                <div class="col-md-7">
-                    <h2 class="">Get The Result You Want</h2>
-                    <p class="lead mx-auto desc mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ut quisquam, distinctio illo, debitis repudiandae.</p>
                 </div>
             </div>
         </div>
+    </section>
 
-    </div>
-
-    <div class="site-section" id="classes-section">
+    <section class="ftco-section">
         <div class="container">
-            <div class="row justify-content-center text-center mb-5">
-                <div class="col-md-8  section-heading">
-                    <span class="subheading">Fitness Class</span>
-                    <h2 class="heading mb-3">Our Classes</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis consequatur cum neque?
-                        Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-8 text-center heading-section ftco-animate">
+                    <h2 class="mb-4">Our Best Services</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="class-item d-flex align-items-center">
-                        <a href="single.html" class="class-item-thumbnail">
-                            <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                        </a>
-                        <div class="class-item-text">
+                <div class="col-lg-9">
+                    <div class="row tabulation mt-4 ftco-animate">
+                        <div class="col-md-4">
+                            <ul class="nav nav-pills nav-fill d-md-flex d-block flex-column">
+                                <li class="nav-item text-left">
+                                    <a class="nav-link active py-4" data-toggle="tab" href="#services-1"><span
+                                                class="flaticon-roof mr-2"></span> Skylights</a>
+                                </li>
+                                <li class="nav-item text-left">
+                                    <a class="nav-link py-4" data-toggle="tab" href="#services-2"><span
+                                                class="flaticon-roof-1 mr-2"></span> Waterproofing</a>
+                                </li>
+                                <li class="nav-item text-left">
+                                    <a class="nav-link py-4" data-toggle="tab" href="#services-3"><span
+                                                class="flaticon-roof-5 mr-2"></span> Industrial Roofing</a>
+                                </li>
+                                <li class="nav-item text-left">
+                                    <a class="nav-link py-4" data-toggle="tab" href="#services-4"><span
+                                                class="flaticon-roof-2 mr-2"></span> Residential Roofing</a>
+                                </li>
+                                <li class="nav-item text-left">
+                                    <a class="nav-link py-4" data-toggle="tab" href="#services-5"><span
+                                                class="flaticon-roof-3 mr-2"></span> Gutter Cleaning</a>
+                                </li>
+                                <li class="nav-item text-left">
+                                    <a class="nav-link border-bottom py-4" data-toggle="tab" href="#services-6"><span
+                                                class="flaticon-roof-4 mr-2"></span> Commercial Roofing</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-8 pl-md-4">
+                            <div class="tab-content">
+                                <div class="tab-pane container p-0 active" id="services-1">
+                                    <h3><a href="#">Skylights</a></h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+                                        right at the coast of the Semantics, a large language ocean.</p>
+                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad
+                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
+                                        didn’t listen. She packed her seven versalia, put her initial into the belt and
+                                        made herself on the way.</p>
+                                    <ul>
+                                        <li><span class="fa fa-check"></span>The Big Oxmox advised her not to do so</li>
+                                        <li><span class="fa fa-check"></span>Far far away, behind the word mountains
+                                        </li>
+                                        <li><span class="fa fa-check"></span>Separated they live in Bookmarksgrove</li>
+                                        <li><span class="fa fa-check"></span>She packed her seven versalia</li>
+                                        <li><span class="fa fa-check"></span>Little Blind Text didn’t listen</li>
+                                    </ul>
 
-                            <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                            <span>By Justin Daniel</span>,
-                            <span>30 minutes</span>
+                                </div>
+                                <div class="tab-pane container p-0 fade" id="services-2">
+                                    <h3><a href="#">Waterproofing</a></h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+                                        right at the coast of the Semantics, a large language ocean.</p>
+                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad
+                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
+                                        didn’t listen. She packed her seven versalia, put her initial into the belt and
+                                        made herself on the way.</p>
+                                    <ul>
+                                        <li><span class="fa fa-check"></span>The Big Oxmox advised her not to do so</li>
+                                        <li><span class="fa fa-check"></span>Far far away, behind the word mountains
+                                        </li>
+                                        <li><span class="fa fa-check"></span>Separated they live in Bookmarksgrove</li>
+                                        <li><span class="fa fa-check"></span>She packed her seven versalia</li>
+                                        <li><span class="fa fa-check"></span>Little Blind Text didn’t listen</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane container p-0 fade" id="services-3">
+                                    <h3><a href="#">Industrial Roofing</a></h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+                                        right at the coast of the Semantics, a large language ocean.</p>
+                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad
+                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
+                                        didn’t listen. She packed her seven versalia, put her initial into the belt and
+                                        made herself on the way.</p>
+                                    <ul>
+                                        <li><span class="fa fa-check"></span>The Big Oxmox advised her not to do so</li>
+                                        <li><span class="fa fa-check"></span>Far far away, behind the word mountains
+                                        </li>
+                                        <li><span class="fa fa-check"></span>Separated they live in Bookmarksgrove</li>
+                                        <li><span class="fa fa-check"></span>She packed her seven versalia</li>
+                                        <li><span class="fa fa-check"></span>Little Blind Text didn’t listen</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane container p-0 fade" id="services-4">
+                                    <h3><a href="#">Residential Roofing</a></h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+                                        right at the coast of the Semantics, a large language ocean.</p>
+                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad
+                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
+                                        didn’t listen. She packed her seven versalia, put her initial into the belt and
+                                        made herself on the way.</p>
+                                    <ul>
+                                        <li><span class="fa fa-check"></span>The Big Oxmox advised her not to do so</li>
+                                        <li><span class="fa fa-check"></span>Far far away, behind the word mountains
+                                        </li>
+                                        <li><span class="fa fa-check"></span>Separated they live in Bookmarksgrove</li>
+                                        <li><span class="fa fa-check"></span>She packed her seven versalia</li>
+                                        <li><span class="fa fa-check"></span>Little Blind Text didn’t listen</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane container p-0 fade" id="services-5">
+                                    <h3><a href="#">Gutter Cleaning</a></h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+                                        right at the coast of the Semantics, a large language ocean.</p>
+                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad
+                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
+                                        didn’t listen. She packed her seven versalia, put her initial into the belt and
+                                        made herself on the way.</p>
+                                    <ul>
+                                        <li><span class="fa fa-check"></span>The Big Oxmox advised her not to do so</li>
+                                        <li><span class="fa fa-check"></span>Far far away, behind the word mountains
+                                        </li>
+                                        <li><span class="fa fa-check"></span>Separated they live in Bookmarksgrove</li>
+                                        <li><span class="fa fa-check"></span>She packed her seven versalia</li>
+                                        <li><span class="fa fa-check"></span>Little Blind Text didn’t listen</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane container p-0 fade" id="services-6">
+                                    <h3><a href="#">Commercial Roofing</a></h3>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+                                        right at the coast of the Semantics, a large language ocean.</p>
+                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad
+                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
+                                        didn’t listen. She packed her seven versalia, put her initial into the belt and
+                                        made herself on the way.</p>
+                                    <ul>
+                                        <li><span class="fa fa-check"></span>The Big Oxmox advised her not to do so</li>
+                                        <li><span class="fa fa-check"></span>Far far away, behind the word mountains
+                                        </li>
+                                        <li><span class="fa fa-check"></span>Separated they live in Bookmarksgrove</li>
+                                        <li><span class="fa fa-check"></span>She packed her seven versalia</li>
+                                        <li><span class="fa fa-check"></span>Little Blind Text didn’t listen</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="class-item d-flex align-items-center">
-                        <a href="single.html" class="class-item-thumbnail">
-                            <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                        </a>
-                        <div class="class-item-text">
-
-                            <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                            <span>By Justin Daniel</span>,
-                            <span>30 minutes</span>
-                        </div>
-                    </div>
-
-                    <div class="class-item d-flex align-items-center">
-                        <a href="single.html" class="class-item-thumbnail">
-                            <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                        </a>
-                        <div class="class-item-text">
-
-                            <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                            <span>By Justin Daniel</span>,
-                            <span>30 minutes</span>
-                        </div>
-                    </div>
-
-                    <div class="class-item d-flex align-items-center">
-                        <a href="single.html" class="class-item-thumbnail">
-                            <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                        </a>
-                        <div class="class-item-text">
-
-                            <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                            <span>By Justin Daniel</span>,
-                            <span>30 minutes</span>
-                        </div>
-                    </div>
-
-                    <div class="class-item d-flex align-items-center">
-                        <a href="single.html" class="class-item-thumbnail">
-                            <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                        </a>
-                        <div class="class-item-text">
-
-                            <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                            <span>By Justin Daniel</span>,
-                            <span>30 minutes</span>
-                        </div>
-                    </div>
-
-
                 </div>
-                <div class="col-lg-6">
-                    <div class="class-item d-flex align-items-center">
-                        <a href="single.html" class="class-item-thumbnail">
-                            <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                        </a>
-                        <div class="class-item-text">
+                <div class="col-lg-3 d-flex align-items-stretch">
+                    <div class="img" style="background-image: url(images/about.jpg);"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                            <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                            <span>By Justin Daniel</span>,
-                            <span>30 minutes</span>
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+        <div class="container">
+            <div class="row justify-content-center pb-5 mb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <span class="subheading">Projects</span>
+                    <h2>Done Projects</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-md-0">
+            <div class="row no-gutters">
+                <div class="col-md-3 ftco-animate">
+                    <div class="work img d-flex align-items-end" style="background-image: url(images/work-1.jpg);">
+                        <a href="images/work-1.jpg"
+                           class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
+                        </a>
+                        <div class="desc w-100 px-4">
+                            <div class="text w-100 mb-3">
+                                <h2><a href="work-single.html">Pubs, Bars and Restaurants</a></h2>
+                                <span>House</span>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="class-item d-flex align-items-center">
-                        <a href="single.html" class="class-item-thumbnail">
-                            <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <div class="work img d-flex align-items-end" style="background-image: url(images/work-2.jpg);">
+                        <a href="images/work-2.jpg"
+                           class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
                         </a>
-                        <div class="class-item-text">
-
-                            <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                            <span>By Justin Daniel</span>,
-                            <span>30 minutes</span>
+                        <div class="desc w-100 px-4">
+                            <div class="text w-100 mb-3">
+                                <h2><a href="work-single.html">Pubs, Bars and Restaurants</a></h2>
+                                <span>House</span>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="class-item d-flex align-items-center">
-                        <a href="single.html" class="class-item-thumbnail">
-                            <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <div class="work img d-flex align-items-end" style="background-image: url(images/work-3.jpg);">
+                        <a href="images/work-3.jpg"
+                           class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
                         </a>
-                        <div class="class-item-text">
-
-                            <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                            <span>By Justin Daniel</span>,
-                            <span>30 minutes</span>
+                        <div class="desc w-100 px-4">
+                            <div class="text w-100 mb-3">
+                                <h2><a href="work-single.html">Pubs, Bars and Restaurants</a></h2>
+                                <span>House</span>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="class-item d-flex align-items-center">
-                        <a href="single.html" class="class-item-thumbnail">
-                            <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <div class="work img d-flex align-items-end" style="background-image: url(images/work-4.jpg);">
+                        <a href="images/work-4.jpg"
+                           class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
                         </a>
-                        <div class="class-item-text">
-
-                            <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                            <span>By Justin Daniel</span>,
-                            <span>30 minutes</span>
+                        <div class="desc w-100 px-4">
+                            <div class="text w-100 mb-3">
+                                <h2><a href="work-single.html">Pubs, Bars and Restaurants</a></h2>
+                                <span>House</span>
+                            </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="class-item d-flex align-items-center">
-                        <a href="single.html" class="class-item-thumbnail">
-                            <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
+                <div class="col-md-3 ftco-animate">
+                    <div class="work img d-flex align-items-end" style="background-image: url(images/work-5.jpg);">
+                        <a href="images/work-5.jpg"
+                           class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
                         </a>
-                        <div class="class-item-text">
+                        <div class="desc w-100 px-4">
+                            <div class="text w-100 mb-3">
+                                <h2><a href="work-single.html">Pubs, Bars and Restaurants</a></h2>
+                                <span>House</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <div class="work img d-flex align-items-end" style="background-image: url(images/work-6.jpg);">
+                        <a href="images/work-6.jpg"
+                           class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
+                        </a>
+                        <div class="desc w-100 px-4">
+                            <div class="text w-100 mb-3">
+                                <h2><a href="work-single.html">Pubs, Bars and Restaurants</a></h2>
+                                <span>House</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 ftco-animate">
+                    <div class="work img d-flex align-items-end" style="background-image: url(images/work-7.jpg);">
+                        <a href="images/work-7.jpg"
+                           class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
+                        </a>
+                        <div class="desc w-100 px-4">
+                            <div class="text w-100 mb-3">
+                                <h2><a href="work-single.html">Pubs, Bars and Restaurants</a></h2>
+                                <span>House</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                            <span>By Justin Daniel</span>,
-                            <span>30 minutes</span>
+                <div class="col-md-3 ftco-animate">
+                    <div class="work img d-flex align-items-end" style="background-image: url(images/work-8.jpg);">
+                        <a href="images/work-8.jpg"
+                           class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
+                        </a>
+                        <div class="desc w-100 px-4">
+                            <div class="text w-100 mb-3">
+                                <h2><a href="work-single.html">Pubs, Bars and Restaurants</a></h2>
+                                <span>House</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="bgimg" style="background-image: url('{{asset('client/images/bg_3.jpg')}}');"  data-stellar-background-ratio="0.5">
+    <section class="ftco-section testimony-section bg-light">
         <div class="container">
-            <div class="row align-items-center justify-content-center text-center">
-                <div class="col-md-7">
-                    <h2 class="">Every Step Counts</h2>
-                    <p class="lead mx-auto desc mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit ipsam tempore, sapiente modi facilis est?</p>
+            <div class="row justify-content-center pb-5 mb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <span class="subheading">Testimonies</span>
+                    <h2>Happy Clients &amp; Feedbacks</h2>
+                </div>
+            </div>
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel ftco-owl">
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                            class="fa fa-quote-left"></span></div>
+                                <div class="text">
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Roger Scott</p>
+                                            <span class="position">Marketing Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                            class="fa fa-quote-left"></span></div>
+                                <div class="text">
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Roger Scott</p>
+                                            <span class="position">Marketing Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                            class="fa fa-quote-left"></span></div>
+                                <div class="text">
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Roger Scott</p>
+                                            <span class="position">Marketing Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                            class="fa fa-quote-left"></span></div>
+                                <div class="text">
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Roger Scott</p>
+                                            <span class="position">Marketing Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                            class="fa fa-quote-left"></span></div>
+                                <div class="text">
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Roger Scott</p>
+                                            <span class="position">Marketing Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="site-section" id="schedule-section">
+    <section class="ftco-section">
         <div class="container">
-            <div class="row justify-content-center text-center mb-5">
-                <div class="col-md-8  section-heading">
-                    <span class="subheading">Fitness Sched</span>
-                    <h2 class="heading mb-3">Schedule</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                        texts.
-                        Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+            <div class="row justify-content-center pb-5 mb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <span class="subheading">News &amp; Blog</span>
+                    <h2>Latest news from our blog</h2>
                 </div>
             </div>
+            <div class="row d-flex">
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry align-self-stretch">
+                        <a href="blog-single.html" class="block-20"
+                           style="background-image: url('images/image_1.jpg');">
+                        </a>
+                        <div class="text p-3">
+                            <div class="posted mb-3 d-flex">
+                                <div class="img author" style="background-image: url(images/person_2.jpg);"></div>
+                                <div class="desc pl-3">
+                                    <span>Posted by John doe</span>
+                                    <span>24 February 2020</span>
+                                </div>
+                            </div>
+                            <h3 class="heading"><a href="#">How Roofing Charge for Their Services</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry align-self-stretch">
+                        <a href="blog-single.html" class="block-20"
+                           style="background-image: url('images/image_2.jpg');">
+                        </a>
+                        <div class="text p-3">
+                            <div class="posted mb-3 d-flex">
+                                <div class="img author" style="background-image: url(images/person_3.jpg);"></div>
+                                <div class="desc pl-3">
+                                    <span>Posted by John doe</span>
+                                    <span>24 February 2020</span>
+                                </div>
+                            </div>
+                            <h3 class="heading"><a href="#">How Roofing Charge for Their Services</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry align-self-stretch">
+                        <a href="blog-single.html" class="block-20"
+                           style="background-image: url('images/image_3.jpg');">
+                        </a>
+                        <div class="text p-3">
+                            <div class="posted mb-3 d-flex">
+                                <div class="img author" style="background-image: url(images/person_1.jpg);"></div>
+                                <div class="desc pl-3">
+                                    <span>Posted by John doe</span>
+                                    <span>24 February 2020</span>
+                                </div>
+                            </div>
+                            <h3 class="heading"><a href="#">How Roofing Charge for Their Services</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center pb-5 mb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <span class="subheading">Price &amp; Plans</span>
+                    <h2>Pricing</h2>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-12">
-                    <ul class="nav days d-flex" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="sunday-tab" data-toggle="tab" href="#nav-sunday" role="tab" aria-controls="sunday"
-                               aria-selected="true">S</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="monday-tab" data-toggle="tab" href="#nav-monday" role="tab" aria-controls="monday"
-                               aria-selected="false">M</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#nav-tuesday" role="tab" aria-controls="tuesday"
-                               aria-selected="false">T</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="wednesday-tab" data-toggle="tab" href="#nav-wednesday" role="tab" aria-controls="wednesday"
-                               aria-selected="false">W</a>
-                        </li>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="block-7">
+                        <div class="text-center">
+                            <span class="excerpt d-block">Standard</span>
+                            <span class="price"><sup>$</sup> <span class="number">49</span></span>
 
-                        <li class="nav-item">
-                            <a class="nav-link" id="thursday-tab" data-toggle="tab" href="#nav-thursday" role="tab" aria-controls="thursday"
-                               aria-selected="false">T</a>
-                        </li><li class="nav-item">
-                            <a class="nav-link" id="friday-tab" data-toggle="tab" href="#nav-friday" role="tab" aria-controls="friday"
-                               aria-selected="false">F</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="saturday-tab" data-toggle="tab" href="#nav-saturday" role="tab" aria-controls="saturday"
-                               aria-selected="false">S</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                            <ul class="pricing-text mb-5">
+                                <li><span class="fa fa-check mr-2"></span>1 month dedicated training</li>
+                                <li><span class="fa fa-check mr-2"></span>24/7 in touch on the phone</li>
+                                <li><span class="fa fa-check mr-2"></span>Consultation hours</li>
+                                <li><span class="fa fa-check mr-2"></span>Personal visit</li>
+                                <li><span class="fa fa-check mr-2"></span>meet &amp; greet</li>
+                            </ul>
 
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="nav-sunday" role="tabpanel" aria-labelledby="nav-sunday-tab">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Sunday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Sunday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Sunday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Sunday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Sunday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Sunday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Sunday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Sunday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Sunday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Sunday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
+                            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-monday" role="tabpanel" aria-labelledby="nav-monday-tab">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Monday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Monday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="block-7">
+                        <div class="text-center">
+                            <span class="excerpt d-block">Basic</span>
+                            <span class="price active"><sup>$</sup> <span class="number">79</span></span>
 
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Monday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
+                            <ul class="pricing-text mb-5">
+                                <li><span class="fa fa-check mr-2"></span>1 month dedicated training</li>
+                                <li><span class="fa fa-check mr-2"></span>24/7 in touch on the phone</li>
+                                <li><span class="fa fa-check mr-2"></span>Consultation hours</li>
+                                <li><span class="fa fa-check mr-2"></span>Personal visit</li>
+                                <li><span class="fa fa-check mr-2"></span>meet &amp; greet</li>
+                            </ul>
 
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Monday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Monday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Monday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Monday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Monday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Monday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Monday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
+                            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-tuesday" role="tabpanel" aria-labelledby="nav-tuesday-tab">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Tuesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Tuesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="block-7">
+                        <div class="text-center">
+                            <span class="excerpt d-block">Standard</span>
+                            <span class="price"><sup>$</sup> <span class="number">109</span></span>
 
+                            <ul class="pricing-text mb-5">
+                                <li><span class="fa fa-check mr-2"></span>1 month dedicated training</li>
+                                <li><span class="fa fa-check mr-2"></span>24/7 in touch on the phone</li>
+                                <li><span class="fa fa-check mr-2"></span>Consultation hours</li>
+                                <li><span class="fa fa-check mr-2"></span>Personal visit</li>
+                                <li><span class="fa fa-check mr-2"></span>meet &amp; greet</li>
+                            </ul>
 
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Tuesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Tuesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Tuesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Tuesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Tuesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Tuesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Tuesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Tuesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
+                            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="nav-wednesday" role="tabpanel" aria-labelledby="nav-wednesday-tab">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Wednesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Wednesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="block-7">
+                        <div class="text-center">
+                            <span class="excerpt d-block">Professional</span>
+                            <span class="price"><sup>$</sup> <span class="number">149</span></span>
 
+                            <ul class="pricing-text mb-5">
+                                <li><span class="fa fa-check mr-2"></span>1 month dedicated training</li>
+                                <li><span class="fa fa-check mr-2"></span>24/7 in touch on the phone</li>
+                                <li><span class="fa fa-check mr-2"></span>Consultation hours</li>
+                                <li><span class="fa fa-check mr-2"></span>Personal visit</li>
+                                <li><span class="fa fa-check mr-2"></span>meet &amp; greet</li>
+                            </ul>
 
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Wednesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Wednesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Wednesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Wednesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Wednesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Wednesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Wednesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Wednesday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
+                            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
                         </div>
                     </div>
-                </div>
-
-                <div class="tab-pane fade" id="nav-thursday" role="tabpanel" aria-labelledby="nav-thursday-tab">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Thursday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Thursday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Thursday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Thursday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Thursday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Thursday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Thursday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Thursday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Thursday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Thursday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="nav-friday" role="tabpanel" aria-labelledby="nav-friday-tab">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Friday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Friday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Friday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Friday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Friday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Friday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Friday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Friday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Friday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Friday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="nav-saturday" role="tabpanel" aria-labelledby="nav-saturday-tab">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Saturday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Saturday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Saturday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Saturday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Saturday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_3.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Saturday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #3</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Saturday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #1</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_2.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Saturday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #2</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_4.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Saturday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #4</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-
-                            <div class="class-item d-flex align-items-center">
-                                <a href="single.html" class="class-item-thumbnail">
-                                    <img src="{{asset('client/images/img_1.jpg')}}" alt="Image">
-                                </a>
-                                <div class="class-item-text">
-                                    <span>Saturday 7:30am - 9:00am</span>
-                                    <h2><a href="single.html">Fitness Class Name #5</a></h2>
-                                    <span>By Justin Daniel</span>,
-                                    <span>30 minutes</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="bgimg" style="background-image: url('{{asset('client/images/bg_1.jpg')}}');" data-stellar-background-ratio="0.5">
-        <div class="container">
-            <div class="row align-items-center justify-content-center text-center">
-                <div class="col-md-7">
-                    <h2 class="">Your Fitness Partner Where Ever You Are</h2>
-                    <p class="lead mx-auto desc mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, nisi cum officia alias recusandae neque reprehenderit.</p>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-
-    <div class="site-section" id="trainer-section">
-        <div class="container">
-            <div class="row justify-content-center text-center mb-5" data-aos="fade-up">
-                <div class="col-md-8  section-heading">
-                    <span class="subheading">Trainer</span>
-                    <h2 class="heading mb-3">Our Trainers</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                        texts.
-                        Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="">
-                    <div class="person">
-                        <img src="{{asset('client/images/person_1.jpg')}}" alt="Image" class="img-fluid">
-                        <h3>Justin Daniel</h3>
-                        <p class="position">Trainer</p>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                            texts.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <div class="person">
-                        <img src="{{asset('client/images/person_3.jpg')}}" alt="Image" class="img-fluid">
-                        <h3>Matthew Davidson</h3>
-                        <p class="position">Trainer</p>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                            texts.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
-                    <div class="person">
-                        <img src="{{asset('client/images/person_2.jpg')}}" alt="Image" class="img-fluid">
-                        <h3>Matthew Davidson</h3>
-                        <p class="position">Trainer</p>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                            texts.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 mb-4 mb-lg-0 col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="person">
-                        <img src="{{asset('client/images/person_4.jpg')}}" alt="Image" class="img-fluid">
-                        <h3>Matthew Davidson</h3>
-                        <p class="position">Trainer</p>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                            texts.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="site-section" id="services-section">
-        <div class="container">
-            <div class="row justify-content-center text-center mb-5" data-aos="fade-up">
-                <div class="col-md-8  section-heading">
-                    <span class="subheading">Fitness Services</span>
-                    <h2 class="heading mb-3">Services</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                        texts.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 mb-4 col-md-6" data-aos="fade-up" data-aos-delay="">
-                    <div class="ftco-feature-1">
-                        <span class="icon flaticon-fit"></span>
-                        <div class="ftco-feature-1-text">
-                            <h2>Be Fit</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur tempora delectus aut, mollitia. Veritatis!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="ftco-feature-1">
-                        <span class="icon flaticon-gym-1"></span>
-                        <div class="ftco-feature-1-text">
-                            <h2>Join Club</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae tenetur numquam sunt sequi similique.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mb-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="ftco-feature-1">
-                        <span class="icon flaticon-gym"></span>
-                        <div class="ftco-feature-1-text">
-                            <h2>Gym Fitness</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam fuga, blanditiis. Possimus, error, deserunt.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-4 col-md-6" data-aos="fade-up" data-aos-delay="">
-                    <div class="ftco-feature-1">
-                        <span class="icon flaticon-vegetables"></span>
-                        <div class="ftco-feature-1-text">
-                            <h2>Eat Vegie</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ullam tempore aliquam dolores quos.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="ftco-feature-1">
-                        <span class="icon flaticon-fruit-juice"></span>
-                        <div class="ftco-feature-1-text">
-                            <h2>Fruit Juices</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aut libero, doloribus. Magni, nihil.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="ftco-feature-1">
-                        <span class="icon flaticon-stationary-bike"></span>
-                        <div class="ftco-feature-1-text">
-                            <h2>Body Warmup</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat dolorem debitis assumenda beatae quis.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="site-section bg-light contact-wrap" id="contact-section">
-        <div class="container">
-
-            <div class="row justify-content-center text-center mb-5">
-                <div class="col-md-8  section-heading">
-                    <span class="subheading">Get In Touch</span>
-                    <h2 class="heading mb-3">Contact Us</h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                        texts.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-md-7">
-                    <form method="post" data-aos="fade">
-                        <div class="form-group row">
-                            <div class="col-md-6 mb-3 mb-lg-0">
-                                <input type="text" class="form-control" placeholder="First name">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Last name">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <input type="text" class="form-control" placeholder="Subject">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-md-12">
-                  <textarea class="form-control" id="" cols="30" rows="10"
-                            placeholder="Write your message here."></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-6">
-
-                                <input type="submit" class="btn btn-primary py-3 px-5 btn-block" value="Send Message">
-                            </div>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 @endsection

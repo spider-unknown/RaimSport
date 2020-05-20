@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', 'HomeController@welcome')->name('welcome');
-
 Route::get('/secure/config/migrate-refresh', ['uses' => 'ConfigController@migrateRefresh']);
 Route::get('/secure/config/migrate', ['uses' => 'ConfigController@migrate']);
 Route::get('/secure/config/db-seed', ['uses' => 'ConfigController@dbSeed']);
@@ -76,4 +74,14 @@ Route::group(['middleware' => ['auth']], function () {
         Route::delete('product/delete/{id}', ['uses' => 'ProductController@destroy', 'as' => 'product.delete'])->where('id', '[0-9]+');
 
     });
+});
+
+Route::group(['namespace' => 'Client'], function () {
+    Route::get('/', ['uses' => 'MainController@index', 'as' => 'client.index']);
+    Route::get('/services', ['uses' => 'MainController@services', 'as' => 'client.services']);
+    Route::get('/project', ['uses' => 'MainController@project', 'as' => 'client.project']);
+    Route::get('/contact', ['uses' => 'MainController@contact', 'as' => 'client.contact']);
+    Route::get('/blog-single', ['uses' => 'MainController@blogSingle', 'as' => 'client.blogSingle']);
+    Route::get('/blog', ['uses' => 'MainController@blog', 'as' => 'client.blog']);
+    Route::get('/about', ['uses' => 'MainController@about', 'as' => 'client.about']);
 });
