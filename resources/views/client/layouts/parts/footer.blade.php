@@ -3,61 +3,83 @@
         <div class="row mb-5">
             <div class="col-md-6 col-lg">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="logo"><a href="#"><span class="flaticon-roof-2 mr-2"></span>Roofing</a></h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                        live the blind texts.</p>
+                    <h2 class="logo"><a href="#"><span class="fa fa-sport mr-2"></span>Raimsport</a></h2>
+                    <p>Будь первым вместе с нами.</p>
                     <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
-                        <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="fa fa-telegram"></span></a></li>
                         <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
                         <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+                        <li class="ftco-animate"><a href="#"><span class="fa fa-vk"></span></a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-6 col-lg">
                 <div class="ftco-footer-widget mb-4 ml-md-5">
-                    <h2 class="ftco-heading-2">Services</h2>
+                    <h2 class="ftco-heading-2">Услуги</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Skylights</a></li>
-                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Waterproofing</a>
+                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Футобльные
+                                покрытия</a></li>
+                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Волейбольные покрытия</a>
                         </li>
-                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Industrial
-                                Roofing</a></li>
-                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Residential
-                                Roofing</a></li>
-                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Gutter Cleaning</a>
-                        </li>
-                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Commercial
-                                Roofing</a></li>
+                        <li><a href="#" class="py-1 d-block"><span class="fa fa-check mr-3"></span>Баскетбольные
+                                покрытия</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-6 col-lg">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Business Hours</h2>
+                    <h2 class="ftco-heading-2">Рабочее время</h2>
                     <div class="opening-hours">
-                        <h4>Opening Days:</h4>
+                        <h4>Дни работы:</h4>
                         <p class="pl-3">
-                            <span>Monday – Friday : 9am to 20 pm</span>
-                            <span>Saturday : 9am to 17 pm</span>
+                            <span>Понедельник – Пятница : c 9:00 до 18:00</span>
                         </p>
-                        <h4>Vacations:</h4>
+                        <h4>Выходные:</h4>
                         <p class="pl-3">
-                            <span>All Sunday Days</span>
-                            <span>All Official Holidays</span>
+                            <span>Суббота</span>
+                            <span>Воскресенье</span>
+                            <span>Все официальные выходные</span>
                         </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg">
                 <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Contact information</h2>
+                    <h2 class="ftco-heading-2">Контактная информация</h2>
                     <div class="block-23 mb-3">
                         <ul>
-                            <li><span class="icon fa fa-map-marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span>
+                            <li>
+                                <span class="icon fa fa-map-marker"></span>
+                                <span class="text">Казахстан, Алматы <br>Казыбек би 117</span>
                             </li>
-                            <li><a href="#"><span class="icon fa fa-phone"></span><span
-                                            class="text">+2 392 3929 210</span></a></li>
-                            <li><a href="#"><span class="icon fa fa-paper-plane"></span><span class="text">info@yourdomain.com</span></a>
+                            <li>
+                                <a href="#">
+                                    <span class="icon fa fa-phone"></span>
+                                    <span class="text">+77087525322 Сержан</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon fa fa-phone"></span>
+                                    <span class="text">+77071997060 Абзал</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon fa fa-telegram"></span>
+                                    <span class="text">+77087525322</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon fa fa-whatsapp"></span>
+                                    <span class="text">+77071997060</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="icon fa fa-paper-plane"></span>
+                                    <span class="text">raimsports@gmail.com</span></a>
                             </li>
                         </ul>
                     </div>

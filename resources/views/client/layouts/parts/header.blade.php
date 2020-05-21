@@ -3,9 +3,10 @@
         <div class="row justify-content-between">
             <div class="col-3 d-flex align-items-center">
                 <a class="navbar-brand d-flex" href="{{route('client.index')}}">
-                    <div class="icon d-flex align-items-center justify-content-center"><span
-                                class="flaticon-roof-2"></span></div>
-                    Roofing</a>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img style="width: auto; height: 40px;" src="{{asset('client/raimsport.png')}}" alt="Raimsport">
+                    </div>
+                    Raimsport</a>
             </div>
             <div class="col-3 d-flex justify-content-end align-items-center">
                 <div class="social-media">
@@ -17,7 +18,7 @@
                         <a href="#" class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
                         <a href="#" class="d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                                    class="fa fa-vk"><i class="sr-only">Dribbble</i></span></a>
                     </p>
                 </div>
             </div>
@@ -31,10 +32,10 @@
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                     aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa fa-bars"></span> Menu
+                <span class="fa fa-bars"></span> Меню
             </button>
             <div class="req-button order-lg-last">
-                <a href="#">Request A Quote</a>
+                <a href="#">Оставить заявку</a>
             </div>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mr-auto">
@@ -61,7 +62,7 @@
     </nav>
     <!-- END nav -->
     <div class="hero-wrap hero-wrap-2"
-         style="background-image: url({{asset('/client/images/bg_2.jpg')}}); background-position: 50% 0%;"
+         style="background-image: url({{asset('/client/tennis.jpg')}}); background-position: 50% 0%;"
          data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">

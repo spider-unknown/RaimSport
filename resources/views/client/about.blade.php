@@ -15,31 +15,38 @@
     			<div class="col-md-6 pl-md-5">
     				<div class="row justify-content-start py-5">
 		          <div class="col-md-12 heading-section ftco-animate">
-		          	<span class="subheading">Welcome to Roofing</span>
-		            <h2 class="mb-4">We help more than 65 years serving Roofing Industry</h2>
-		            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-</p>
+		          	<span class="subheading">Добро пожаловать в Raimsport</span>
+		            <h2 class="mb-4">RaimSport - компания создана для продвижения Казахстанского спорта!</h2>
+		            <p>
+						Наша команда работает на территории нашей страны в сфере проектирования, строительства, модернизации спортивных объектов любого уровня сложности. За время существования нами были воплощены много проектов, которые благополучно работают и приносят людям пользу по сей день. Использую высокие мировые стандарты в спортивных покрытиях, мы внедряем все лучшее в наши проекты, это касается всего остального, что связано с материалами в строительстве спортивных объектов. Мы всегда готовы помочь, и поделиться знанием, опытом для реализации новых идей.
+					</p>
 		            <div class="tabulation-2 mt-4">
 									<ul class="nav nav-pills nav-fill d-md-flex d-block">
 									  <li class="nav-item mb-md-0 mb-2">
-									    <a class="nav-link active py-2" data-toggle="tab" href="#home1">Our Mission</a>
+									    <a class="nav-link active py-2" data-toggle="tab" href="#home1">Наша миссия</a>
 									  </li>
 									  <li class="nav-item px-lg-2 mb-md-0 mb-2">
-									    <a class="nav-link py-2" data-toggle="tab" href="#home2">Our Vision</a>
+									    <a class="nav-link py-2" data-toggle="tab" href="#home2">Наше видение</a>
 									  </li>
 									  <li class="nav-item">
-									    <a class="nav-link py-2 mb-md-0 mb-2" data-toggle="tab" href="#home3">Our Value</a>
+									    <a class="nav-link py-2 mb-md-0 mb-2" data-toggle="tab" href="#home3">Наши ценности</a>
 									  </li>
 									</ul>
 									<div class="tab-content rounded mt-2">
 									  <div class="tab-pane container p-0 active" id="home1">
-									  	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									  	<p>
+											Создать в Казахстане благоприятные условия для развития спорта
+										</p>
 									  </div>
 									  <div class="tab-pane container p-0 fade" id="home2">
-									  	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									  	<p>
+											Спортивный Казахстан
+										</p>
 									  </div>
 									  <div class="tab-pane container p-0 fade" id="home3">
-									  	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									  	<p>
+											Спортивная молодежь
+										</p>
 									  </div>
 									</div>
 								</div>
@@ -57,8 +64,8 @@
             <div class="block-18 text-center">
               <div class="text">
               	<div class="icon"><span class="fa fa-calendar"></span></div>
-                <strong class="number" data-number="45">0</strong>
-              	<span>Years of Experienced</span>
+                <strong class="number" data-number="8">0</strong>
+              	<span>Лет опыта</span>
               </div>
             </div>
           </div>
@@ -66,8 +73,8 @@
             <div class="block-18 text-center">
               <div class="text">
               	<div class="icon"><span class="fa fa-briefcase"></span></div>
-                <strong class="number" data-number="8500">0</strong>
-              	<span>Project completed</span>
+                <strong class="number" data-number="31">0</strong>
+              	<span>Сделанных проектов</span>
               </div>
             </div>
           </div>
@@ -75,8 +82,8 @@
             <div class="block-18 text-center">
               <div class="text">
               	<div class="icon"><span class="fa fa-users"></span></div>
-                <strong class="number" data-number="2342">0</strong>
-              	<span>Happy Clients</span>
+                <strong class="number" data-number="31">0</strong>
+              	<span>Довольных клиентов</span>
               </div>
             </div>
           </div>
@@ -85,7 +92,7 @@
               <div class="text">
               	<div class="icon"><span class="fa fa-bar-chart"></span></div>
                 <strong class="number" data-number="30">0</strong>
-              	<span>Business Partners</span>
+              	<span>Бизнес партнеров</span>
               </div>
             </div>
           </div>
