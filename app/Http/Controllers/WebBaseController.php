@@ -12,7 +12,6 @@ class WebBaseController extends Controller
         request()
             ->session()
             ->flash('warning', 'Ошибка!');
-
     }
 
     public function added()

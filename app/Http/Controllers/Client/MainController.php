@@ -8,7 +8,6 @@
 
 namespace App\Http\Controllers\Client;
 
-
 use App\Http\Controllers\WebBaseController;
 
 class MainController extends WebBaseController
