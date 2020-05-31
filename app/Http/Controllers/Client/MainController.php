@@ -10,6 +10,7 @@ namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\WebBaseController;
 use App\Models\Blog;
+use App\Models\Note;
 use App\Models\Project;
 use App\Models\Service;
 
@@ -29,6 +30,7 @@ class MainController extends WebBaseController
         }
         return view('client.serviceSingle', compact('service'));
     }
+
     public function services()
     {
         $services = Service::paginate(9);
@@ -72,7 +74,9 @@ class MainController extends WebBaseController
 
     public function about()
     {
-        return view('client.about');
+        $services = Service::limit(10)->get();
+        $notes = Note::all();
+        return view('client.about', compact('services', 'notes'));
     }
 
 }

@@ -39,6 +39,12 @@
                 <p>Услуги</p>
             </a>
         </li>
+        <li class="nav-item {{{ (Request::is('admin/notes') ? 'active' : '') }}}">
+            <a class="nav-link" href="{{route('note.index')}}">
+                <i class="material-icons">comment</i>
+                <p>Отзывы</p>
+            </a>
+        </li>
         <li class="nav-item {{{ (Request::is('admin/products') ? 'active' : '') }}}">
             <a class="nav-link" href="{{route('product.index')}}">
                 <i class="material-icons">gift</i>
