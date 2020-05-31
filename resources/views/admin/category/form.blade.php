@@ -27,10 +27,7 @@
                 <textarea class="form-control"
                           rows="5"
                           id="description"
-                          name="description"
-                          required
-
-                >{{$category ? $category->description : old('description')}}</textarea>
+                          name="description">{{$category ? $category->description : old('description')}}</textarea>
             </div>
         </div>
 
