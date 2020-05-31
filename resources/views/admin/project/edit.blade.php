@@ -13,7 +13,8 @@
                         <img class="default_image_size" src="{{asset($project->img_path)}}" alt="Лого проекта">
                         <br>
                         <br>
-                        <form method="post" action="{{route('project.update', ['id'=>$project->id])}}" enctype="multipart/form-data">
+                        <form method="post" action="{{route('project.update', ['id'=>$project->id])}}"
+                              enctype="multipart/form-data">
                             @include('admin.project.form')
                         </form>
                     </div>
