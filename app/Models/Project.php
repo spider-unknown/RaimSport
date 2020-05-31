@@ -24,8 +24,6 @@ class Project extends Model
     }
 
     public function galleries() {
-        return $this->hasMany(Gallery::class, 'gallery_id', 'id')
-            ->orderBy('ordering', 'asc')
-            ->select(array('id','img_path','course_id'));
+        return $this->hasMany(Gallery::class, 'project_id', 'id');
     }
 }

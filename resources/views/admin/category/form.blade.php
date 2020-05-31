@@ -1,14 +1,12 @@
 {{csrf_field()}}
 <div class="row">
     <div class="col-md-6">
-
             <label class="bmd-label-floating">Название</label>
             <input type="text" class="form-control"
                    name="name"
                    value="{{$category ? $category->name : old('name')}}"
                    id="name"
-                   required
-            >
+                   required>
 
     </div>
     <div class="col-md-6">

@@ -95,6 +95,8 @@ Route::group(['namespace' => 'Client'], function () {
     Route::get('/services', ['uses' => 'MainController@services', 'as' => 'client.services']);
     Route::get('/project', ['uses' => 'MainController@project', 'as' => 'client.project']);
     Route::get('/contact', ['uses' => 'MainController@contact', 'as' => 'client.contact']);
+    Route::get('/blog-single', ['uses' => 'MainController@blogSingle', 'as' => 'client.blogSingle']);
+    Route::get('/project-single/{id}', ['uses' => 'MainController@projectSingle', 'as' => 'client.project.single']);
 //    Route::get('/blog-single', ['uses' => 'MainController@blogSingle', 'as' => 'client.blogSingle']);
     Route::get('/blog/{id}', ['uses' => 'MainController@blogSingle', 'as' => 'client.blogSingle'])->where('id', '[0-9]+');
     Route::get('/blog', ['uses' => 'MainController@blog', 'as' => 'client.blog']);
