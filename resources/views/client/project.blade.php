@@ -12,7 +12,7 @@
                                 </a>
                         <div class="desc w-100 px-4">
                           <div class="text w-100 mb-3">
-                            <h2><a href="#">{{$project->category->name}}</a></h2>
+                            <h2><a href="{{route('client.project.single', ['id' => $project->id])}}">{{$project->category->name}}</a></h2>
                             <span>{{$project->name}}</span>
                           </div>
                         </div>

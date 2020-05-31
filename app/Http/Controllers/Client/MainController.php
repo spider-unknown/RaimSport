@@ -39,6 +39,11 @@ class MainController extends WebBaseController
         return view('client.blogSingle');
     }
 
+    public function projectSingle($id) {
+        $project = Project::where('id', $id)->with('galleries')->first();
+        return view('client.projectSingle', compact('project'));
+    }
+
     public function blog()
     {
         return view('client.blog');

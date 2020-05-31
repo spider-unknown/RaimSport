@@ -82,6 +82,7 @@ Route::group(['namespace' => 'Client'], function () {
     Route::get('/project', ['uses' => 'MainController@project', 'as' => 'client.project']);
     Route::get('/contact', ['uses' => 'MainController@contact', 'as' => 'client.contact']);
     Route::get('/blog-single', ['uses' => 'MainController@blogSingle', 'as' => 'client.blogSingle']);
+    Route::get('/project-single/{id}', ['uses' => 'MainController@projectSingle', 'as' => 'client.project.single']);
     Route::get('/blog', ['uses' => 'MainController@blog', 'as' => 'client.blog']);
     Route::get('/about', ['uses' => 'MainController@about', 'as' => 'client.about']);
 });
