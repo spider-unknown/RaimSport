@@ -72,6 +72,13 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('blog/update/{blog_id}', ['uses' => 'BlogController@update', 'as' => 'blog.update'])->where('blog_id', '[0-9]+');
         Route::delete('blog/delete/{blog_id}', ['uses' => 'BlogController@destroy', 'as' => 'blog.delete'])->where('blog_id', '[0-9]+');
 
+        Route::get('service', ['uses' => 'ServiceController@index', 'as' => 'service.index']);
+        Route::get('service/create', ['uses' => 'ServiceController@create', 'as' => 'service.create']);
+        Route::post('service/store', ['uses' => 'ServiceController@store', 'as' => 'service.store']);
+        Route::get('service/edit/{service_id}', ['uses' => 'ServiceController@edit', 'as' => 'service.edit'])->where('service_id', '[0-9]+');
+        Route::post('service/update/{service_id}', ['uses' => 'ServiceController@update', 'as' => 'service.update'])->where('service_id', '[0-9]+');
+        Route::delete('service/delete/{service_id}', ['uses' => 'ServiceController@destroy', 'as' => 'service.delete'])->where('service_id', '[0-9]+');
+
 
         Route::get('products', ['uses' => 'ProductController@index', 'as' => 'product.index']);
         Route::get('product/create', ['uses' => 'ProductController@create', 'as' => 'product.create']);

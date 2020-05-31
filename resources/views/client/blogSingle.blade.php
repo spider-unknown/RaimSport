@@ -9,7 +9,7 @@
                         <img src="{{asset($blog->img_path)}}" alt="" class="img-fluid">
                     </p>
                     <h2 class="mb-3">{{$blog->title}}</h2>
-                    <p>{!!$blog->description!!}</p>
+                    {!!$blog->description!!}
                 </div> <!-- .col-md-8 -->
                 <div class="col-lg-4 sidebar pr-lg-5 ftco-animate">
                     <div class="sidebar-box ftco-animate">

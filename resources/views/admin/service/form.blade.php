@@ -1,12 +1,22 @@
 {{csrf_field()}}
 <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-6">
         <div class="form-group">
             <label class="bmd-label-floating">Название</label>
             <input type="text" class="form-control"
                    name="title"
-                   value="{{$blog ? $blog->title : old('title')}}"
+                   value="{{$service ? $service->title : old('title')}}"
                    id="name"
+                   required>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="bmd-label-floating">Цена</label>
+            <input type="number" class="form-control"
+                   name="price"
+                   value="{{$service ? $service->price : old('price')}}"
+                   id="price"
                    required>
         </div>
     </div>
@@ -17,7 +27,7 @@
             <div class="form-group">
                 <label class="bmd-label-floating">Описание</label>
                 <textarea class="form-control" rows="5" id="description"
-                          name="description">{{$blog ? $blog->description : old('description')}}</textarea>
+                          name="description">{{$service ? $service->description : old('description')}}</textarea>
             </div>
         </div>
     </div>
@@ -42,16 +52,16 @@
                data-size="md">
     </div>
 </div>
-@if($blog->img_path)
+@if($service->img_path)
     <div class="row">
         <div class="col-5">
-            <img src="{{asset($blog->img_path)}}" class="img-thumbnail m-2">
+            <img src="{{asset($service->img_path)}}" class="img-thumbnail m-2">
         </div>
     </div>
 @endif
 @include('admin.layouts.parts.error')
 <button type="submit" class="btn btn-primary pull-right">Сохранить<i class="material-icons">check</i></button>
-<a href="{{route('blog.index')}}" type="button" class="mb-2 btn btn-medium btn-primary mr-1">
+<a href="{{route('service.index')}}" type="button" class="mb-2 btn btn-medium btn-primary mr-1">
     <i class="material-icons md-12">arrow_back</i> Назад
 </a>
 <div class="clearfix"></div>
