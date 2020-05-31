@@ -7,7 +7,7 @@
                 @foreach($projects as $project)
                 <div class="col-md-3 ftco-animate">
                     <div class="work img d-flex align-items-end" style="background-image: url({{asset($project->img_path)}});">
-                        <a href="{{asset('client/images/work-1.jpg')}}" class="icon image-popup d-flex justify-content-center align-items-center">
+                        <a href="{{asset($project->img_path)}}" class="icon image-popup d-flex justify-content-center align-items-center">
                                     <span class="fa fa-expand"></span>
                                 </a>
                         <div class="desc w-100 px-4">
