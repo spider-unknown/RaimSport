@@ -9,6 +9,7 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\WebBaseController;
+use App\Models\Project;
 
 class MainController extends WebBaseController
 {
@@ -24,7 +25,8 @@ class MainController extends WebBaseController
 
     public function project()
     {
-        return view('client.project');
+        $projects = Project::where('is_visible', 1)->with('category')->paginate(12);
+        return view('client.project', compact('projects'));
     }
 
     public function contact()

@@ -55,7 +55,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('project/store', ['uses' => 'ProjectController@store', 'as' => 'project.store']);
         Route::get('project/edit/{id}', ['uses' => 'ProjectController@edit', 'as' => 'project.edit'])->where('id', '[0-9]+');
         Route::post('project/update/{id}', ['uses' => 'ProjectController@update', 'as' => 'project.update'])->where('id', '[0-9]+');
-        Route::post('project/visible/{id}', ['uses' => 'Project``Controller@visibleChange', 'as' => 'project.visible'])->where('id', '[0-9]+');
+        Route::post('project/visible/{id}', ['uses' => 'ProjectController@visibleChange', 'as' => 'project.visible'])->where('id', '[0-9]+');
 
 
         Route::get('gallery/{project_id}', ['uses' => 'GalleryController@index', 'as' => 'gallery.index'])->where('project_id', '[0-9]+');
