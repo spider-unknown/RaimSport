@@ -4,7 +4,7 @@
         <div class="form-group">
             <label class="bmd-label-floating">Название</label>
             <input type="text" class="form-control"
-                   name="name"
+                   name="title"
                    value="{{$blog ? $blog->title : old('title')}}"
                    id="name"
                    required>
@@ -15,10 +15,9 @@
     <div class="col-md-12">
         <div class="form-group">
             <div class="form-group">
-                <label class="bmd-label-floating" >Описание</label>
-                <textarea class="form-control" rows="5"  name="description" required>
-                        {{$blog ? $blog->description : old('description')}}
-                </textarea>
+                <label class="bmd-label-floating">Описание</label>
+                <textarea class="form-control" rows="5" id="description" name="description"
+                          required>{{$blog ? $blog->description : old('description')}}</textarea>
             </div>
         </div>
     </div>
@@ -43,7 +42,14 @@
                data-size="md">
     </div>
 </div>
-
+@if($blog->img_path)
+    <div class="row">
+        <div class="col-5">
+            <img src="{{asset($blog->img_path)}}" class="img-thumbnail m-2">
+        </div>
+    </div>
+@endif
+@include('admin.layouts.parts.error')
 <button type="submit" class="btn btn-primary pull-right">Сохранить<i class="material-icons">check</i></button>
 <a href="{{route('blog.index')}}" type="button" class="mb-2 btn btn-medium btn-primary mr-1">
     <i class="material-icons md-12">arrow_back</i> Назад

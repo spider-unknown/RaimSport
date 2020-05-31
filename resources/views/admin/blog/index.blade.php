@@ -29,6 +29,15 @@
                                                href="{{route('blog.edit', ['blog_id' => $blog->id])}}">
                                                 <i class="material-icons md-12">edit</i>
                                             </a>
+                                            <form class="d-inline" action="{{route('blog.delete', ['id' => $blog->id])}}"
+                                                  enctype="multipart/form-data"
+                                                  method="post">
+                                                <input type="hidden" name="_method" value="delete" />
+                                                {{csrf_field()}}
+                                                <button type="submit" class="btn btn-outline-danger btn-sm mb-2">
+                                                    <i class="material-icons md-12">delete</i>
+                                                </button>
+                                            </form>
                                         </td>
                                     </tr>
                                 @endforeach

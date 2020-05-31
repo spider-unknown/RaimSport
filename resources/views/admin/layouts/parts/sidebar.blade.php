@@ -1,4 +1,4 @@
-<div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+<div class="logo"><a href="{{route('client.index')}}" class="simple-text logo-normal">
         RaimSport
     </a></div>
 <div class="sidebar-wrapper">

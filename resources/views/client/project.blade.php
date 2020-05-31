@@ -28,7 +28,9 @@
                         <li><a href="{{route('client.project'). '?page='.($projects->currentPage() - 1)}}">&lt;</a></li>
                       @endif
                       @for($i = 1; $i <= $projects->lastPage(); $i++)
-                        <li class="{{$i == $projects->currentPage() ? 'active' : ''}}"><span>{{$i}}</span></li>
+                              <li class="{{$i == $projects->currentPage() ? 'active' : ''}}">
+                                  <a href="{{route('client.project'). '?page='.($i)}}"><span>{{$i}}</span></a>
+                              </li>
                       @endfor
                       @if($projects->lastPage() != $projects->currentPage())
                           <li><a href="{{route('client.project'). '?page='.($projects->currentPage() + 1)}}">&gt;</a></li>

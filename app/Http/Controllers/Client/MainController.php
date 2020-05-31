@@ -35,14 +35,21 @@ class MainController extends WebBaseController
         return view('client.contact');
     }
 
-    public function blogSingle()
+    public function blogSingle($id)
     {
-        return view('client.blogSingle');
+        $blog = Blog::find($id);
+        if (!$blog) {
+            $this->notFound();
+            return redirect()->back();
+        }
+        return view('client.blogSingle', compact('blog'));
     }
 
     public function blog()
     {
-        $blogs = Blog::paginate(6);
+        $blogs = Blog::with('user')
+            ->orderBy('created_at', 'desc')
+            ->paginate(6);
         return view('client.blog', compact('blogs'));
     }
 
