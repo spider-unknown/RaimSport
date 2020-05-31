@@ -92,6 +92,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::group(['namespace' => 'Client'], function () {
     Route::get('/', ['uses' => 'MainController@index', 'as' => 'client.index']);
+    Route::get('/services/{id}', ['uses' => 'MainController@service', 'as' => 'client.service']);
     Route::get('/services', ['uses' => 'MainController@services', 'as' => 'client.services']);
     Route::get('/project', ['uses' => 'MainController@project', 'as' => 'client.project']);
     Route::get('/contact', ['uses' => 'MainController@contact', 'as' => 'client.contact']);

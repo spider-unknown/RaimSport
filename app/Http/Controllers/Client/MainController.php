@@ -11,6 +11,7 @@ namespace App\Http\Controllers\Client;
 use App\Http\Controllers\WebBaseController;
 use App\Models\Blog;
 use App\Models\Project;
+use App\Models\Service;
 
 class MainController extends WebBaseController
 {
@@ -19,9 +20,19 @@ class MainController extends WebBaseController
         return view('client.index');
     }
 
+    public function service($id)
+    {
+        $service = Service::find($id);
+        if (!$service) {
+            $this->notFound();
+            return redirect()->back();
+        }
+        return view('client.serviceSingle', compact('service'));
+    }
     public function services()
     {
-        return view('client.services');
+        $services = Service::paginate(9);
+        return view('client.services', compact('services'));
     }
 
     public function project()
@@ -45,7 +56,8 @@ class MainController extends WebBaseController
         return view('client.blogSingle', compact('blog'));
     }
 
-    public function projectSingle($id) {
+    public function projectSingle($id)
+    {
         $project = Project::where('id', $id)->with('galleries')->first();
         return view('client.projectSingle', compact('project'));
     }
