@@ -9,6 +9,7 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\WebBaseController;
+use App\Models\Blog;
 use App\Models\Project;
 
 class MainController extends WebBaseController
@@ -41,7 +42,8 @@ class MainController extends WebBaseController
 
     public function blog()
     {
-        return view('client.blog');
+        $blogs = Blog::paginate(6);
+        return view('client.blog', compact('blogs'));
     }
 
     public function about()

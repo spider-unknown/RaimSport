@@ -73,12 +73,12 @@ class WebBaseController extends Controller
 
     public function getCurrentUser()
     {
-        return Auth::user();
+        return auth()->user();
     }
 
     public function getCurrentUserId()
     {
-        return Auth::id();
+        return auth()->id();
     }
 
 }

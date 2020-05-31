@@ -65,6 +65,13 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('gallery/update/{id}', ['uses' => 'GalleryController@update', 'as' => 'gallery.update'])->where('id', '[0-9]+');
         Route::delete('gallery/delete/{id}', ['uses' => 'GalleryController@destroy', 'as' => 'gallery.delete'])->where('id', '[0-9]+');
 
+        Route::get('blog', ['uses' => 'BlogController@index', 'as' => 'blog.index']);
+        Route::get('blog/create', ['uses' => 'BlogController@create', 'as' => 'blog.create']);
+        Route::post('blog/store', ['uses' => 'BlogController@store', 'as' => 'blog.store']);
+        Route::get('blog/edit/{blog_id}', ['uses' => 'BlogController@edit', 'as' => 'blog.edit'])->where('blog_id', '[0-9]+');
+        Route::post('blog/update/{blog_id}', ['uses' => 'BlogController@update', 'as' => 'blog.update'])->where('blog_id', '[0-9]+');
+        Route::delete('blog/delete/{blog_id}', ['uses' => 'BlogController@destroy', 'as' => 'blog.delete'])->where('blog_id', '[0-9]+');
+
 
         Route::get('products', ['uses' => 'ProductController@index', 'as' => 'product.index']);
         Route::get('product/create', ['uses' => 'ProductController@create', 'as' => 'product.create']);
