@@ -9,6 +9,7 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\WebBaseController;
+use App\Models\Blog;
 use App\Models\Project;
 
 class MainController extends WebBaseController
@@ -34,9 +35,14 @@ class MainController extends WebBaseController
         return view('client.contact');
     }
 
-    public function blogSingle()
+    public function blogSingle($id)
     {
-        return view('client.blogSingle');
+        $blog = Blog::find($id);
+        if (!$blog) {
+            $this->notFound();
+            return redirect()->back();
+        }
+        return view('client.blogSingle', compact('blog'));
     }
 
     public function projectSingle($id) {
@@ -46,7 +52,10 @@ class MainController extends WebBaseController
 
     public function blog()
     {
-        return view('client.blog');
+        $blogs = Blog::with('user')
+            ->orderBy('created_at', 'desc')
+            ->paginate(6);
+        return view('client.blog', compact('blogs'));
     }
 
     public function about()

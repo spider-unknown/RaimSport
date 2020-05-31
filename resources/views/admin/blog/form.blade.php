@@ -1,30 +1,25 @@
 {{csrf_field()}}
 <div class="row">
-    <div class="col-md-6">
-        <label class="bmd-label-floating">Название</label>
-        <input type="text" class="form-control"
-               name="name"
-               required
-               value="{{$project ? $project->name : old('name')}}"
-               id="name">
-    </div>
-    <div class="col-md-6">
-        <label class="bmd-label-floating" for="category_id">Категория</label>
-        <select class="form-control" name="category_id" id="category_id" required>
-            @foreach($categories as $category)
-                <option value="{{$category->id}}">{{$category->name}}</option>
-            @endforeach
-        </select>
+    <div class="col-md-12">
+        <div class="form-group">
+            <label class="bmd-label-floating">Название</label>
+            <input type="text" class="form-control"
+                   name="title"
+                   value="{{$blog ? $blog->title : old('title')}}"
+                   id="name"
+                   required>
+        </div>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <label class="bmd-label-floating" for="description">Описание</label>
-        <textarea class="form-control"
-                  rows="5"
-                  required
-                  id="description"
-                  name="description">{{$project ? $project->description : old('description')}}</textarea>
+        <div class="form-group">
+            <div class="form-group">
+                <label class="bmd-label-floating">Описание</label>
+                <textarea class="form-control" rows="5" id="description" name="description"
+                          required>{{$blog ? $blog->description : old('description')}}</textarea>
+            </div>
+        </div>
     </div>
 </div>
 <div class="row">
@@ -47,8 +42,16 @@
                data-size="md">
     </div>
 </div>
+@if($blog->img_path)
+    <div class="row">
+        <div class="col-5">
+            <img src="{{asset($blog->img_path)}}" class="img-thumbnail m-2">
+        </div>
+    </div>
+@endif
+@include('admin.layouts.parts.error')
 <button type="submit" class="btn btn-primary pull-right">Сохранить<i class="material-icons">check</i></button>
-<a href="{{route('project.index')}}" type="button" class="mb-2 btn btn-medium btn-primary mr-1">
+<a href="{{route('blog.index')}}" type="button" class="mb-2 btn btn-medium btn-primary mr-1">
     <i class="material-icons md-12">arrow_back</i> Назад
 </a>
 <div class="clearfix"></div>
@@ -59,3 +62,4 @@
         }
     </script>
 @endsection
+

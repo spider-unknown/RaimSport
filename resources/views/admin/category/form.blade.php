@@ -12,7 +12,7 @@
     <div class="col-md-6">
 
         <label class="bmd-label-floating" for="branch_id">Ветка</label>
-            <select class="form-control" name="branch_id" id="branch_id">
+            <select class="form-control" name="branch_id" id="branch_id" required>
                 @foreach($branches as $branch)
                     <option value="{{$branch->id}}">{{$branch->name}}</option>
                 @endforeach
