@@ -102,7 +102,7 @@ class MainController extends WebBaseController
     public function about()
     {
         $services = Service::limit(10)->get();
-        $notes =  Note::all();
+        $notes = Note::all();
         return view('client.about', compact('services', 'notes'));
     }
 
