@@ -10,8 +10,21 @@
                             <div class="col-md-7 d-flex">
                                 <div class="contact-wrap w-100 p-md-5 p-4">
                                     <h3 class="mb-4">Будьте на связи</h3>
-                                    <form method="POST" id="contactForm" class="contactForm">
+                                    <form method="POST" action="{{route('client.bot.send.contact')}}" id="contactForm" class="contactForm">
+                                        {{csrf_field()}}
                                         <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="theme" id="subject"
+                                                           placeholder="Тема">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control" name="phone" id="subject"
+                                                           placeholder="Номер телефона">
+                                                </div>
+                                            </div>
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" name="name" id="name"
@@ -26,13 +39,7 @@
                                             </div>
                                             <div class="col-md-12">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" name="subject" id="subject"
-                                                           placeholder="Тема">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <textarea name="message" class="form-control" id="message" cols="30"
+                                                    <textarea name="comment" class="form-control" id="message" cols="30"
                                                               rows="7" placeholder="Сообщение"></textarea>
                                                 </div>
                                             </div>
