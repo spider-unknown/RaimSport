@@ -184,82 +184,9 @@
         </div>
     </section>
 
-
-    <section class="ftco-section">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-8 text-center heading-section ftco-animate">
-                    <h2 class="mb-4">Our Best Services</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-9">
-                    <div class="row tabulation mt-4 ftco-animate">
-                        <div class="col-md-4">
-                            <ul class="nav nav-pills nav-fill d-md-flex d-block flex-column">
-                                <li class="nav-item text-left">
-                                    <a class="nav-link active py-4" data-toggle="tab" href="#services-1"><span
-                                                class="flaticon-roof mr-2"></span> Skylights</a>
-                                </li>
-                                <li class="nav-item text-left">
-                                    <a class="nav-link py-4" data-toggle="tab" href="#services-2"><span
-                                                class="flaticon-roof-1 mr-2"></span> Waterproofing</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-8 pl-md-4">
-                            <div class="tab-content">
-                                <div class="tab-pane container p-0 active" id="services-1">
-                                    <h3><a href="#">Skylights</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-                                        right at the coast of the Semantics, a large language ocean.</p>
-                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad
-                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-                                        didn’t listen. She packed her seven versalia, put her initial into the belt and
-                                        made herself on the way.</p>
-                                    <ul>
-                                        <li><span class="fa fa-check"></span>The Big Oxmox advised her not to do so</li>
-                                        <li><span class="fa fa-check"></span>Far far away, behind the word mountains
-                                        </li>
-                                        <li><span class="fa fa-check"></span>Separated they live in Bookmarksgrove</li>
-                                        <li><span class="fa fa-check"></span>She packed her seven versalia</li>
-                                        <li><span class="fa fa-check"></span>Little Blind Text didn’t listen</li>
-                                    </ul>
-
-                                </div>
-                                <div class="tab-pane container p-0 fade" id="services-2">
-                                    <h3><a href="#">Waterproofing</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-                                        right at the coast of the Semantics, a large language ocean.</p>
-                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad
-                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-                                        didn’t listen. She packed her seven versalia, put her initial into the belt and
-                                        made herself on the way.</p>
-                                    <ul>
-                                        <li><span class="fa fa-check"></span>The Big Oxmox advised her not to do so</li>
-                                        <li><span class="fa fa-check"></span>Far far away, behind the word mountains
-                                        </li>
-                                        <li><span class="fa fa-check"></span>Separated they live in Bookmarksgrove</li>
-                                        <li><span class="fa fa-check"></span>She packed her seven versalia</li>
-                                        <li><span class="fa fa-check"></span>Little Blind Text didn’t listen</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 d-flex align-items-stretch">
-                    <div class="img" style="background-image: url({{asset('client/images/about.jpg')}});"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="ftco-section ftco-no-pb ftco-no-pt">
         <div class="container">
-            <div class="row justify-content-center pb-5 mb-3">
+            <div class="row justify-content-center pt-5 pb-5 mb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
                     <span class="subheading">Projects</span>
                     <h2>Done Projects</h2>

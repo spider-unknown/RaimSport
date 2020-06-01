@@ -142,6 +142,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 d-flex align-items-stretch">
+                    <div class="img" style="background-image: url({{asset('client/images/about.jpg')}});"></div>
                 </div>
             </div>
         </div>
