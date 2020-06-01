@@ -101,4 +101,7 @@ Route::group(['namespace' => 'Client'], function () {
     Route::get('/blog/{id}', ['uses' => 'MainController@blogSingle', 'as' => 'client.blogSingle'])->where('id', '[0-9]+');
     Route::get('/blog', ['uses' => 'MainController@blog', 'as' => 'client.blog']);
     Route::get('/about', ['uses' => 'MainController@about', 'as' => 'client.about']);
+    Route::get('/bot-test', ['uses' => 'MainController@botTest', 'as' => 'client.bot']);
+    Route::get('/bot-test', ['uses' => 'MainController@botTest', 'as' => 'client.bot']);
+    Route::post('/bot/send/request', ['uses' => 'MainController@sendTelegram', 'as' => 'client.bot.send']);
 });
