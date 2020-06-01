@@ -10,7 +10,9 @@ namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\WebBaseController;
 use App\Models\Blog;
+use App\Models\Category;
 use App\Models\Note;
+use App\Models\Product;
 use App\Models\Project;
 use App\Models\Service;
 use Illuminate\Http\Request;
@@ -104,6 +106,18 @@ class MainController extends WebBaseController
         $services = Service::limit(10)->get();
         $notes = Note::all();
         return view('client.about', compact('services', 'notes'));
+    }
+
+    public function shop(Request $request)
+    {
+        $categoryId = $request->input('categoryId');
+        $categories = Category::all();
+        if ($categoryId) {
+            $products = Product::where('category_id', $categoryId)->paginate(9);
+        } else {
+            $products = Product::paginate(9);
+        }
+        return view('client.shop', compact('products', 'categories', 'categoryId'));
     }
 
 }

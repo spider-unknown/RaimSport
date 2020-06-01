@@ -87,7 +87,6 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('note/update/{note_id}', ['uses' => 'NoteController@update', 'as' => 'note.update'])->where('note_id', '[0-9]+');
         Route::delete('note/delete/{note_id}', ['uses' => 'NoteController@destroy', 'as' => 'note.delete'])->where('note_id', '[0-9]+');
 
-
         Route::get('products', ['uses' => 'ProductController@index', 'as' => 'product.index']);
         Route::get('product/create', ['uses' => 'ProductController@create', 'as' => 'product.create']);
         Route::post('product/store', ['uses' => 'ProductController@store', 'as' => 'product.store']);
@@ -113,4 +112,6 @@ Route::group(['namespace' => 'Client'], function () {
     Route::get('/bot-test', ['uses' => 'MainController@botTest', 'as' => 'client.bot']);
     Route::get('/bot-test', ['uses' => 'MainController@botTest', 'as' => 'client.bot']);
     Route::post('/bot/send/request', ['uses' => 'MainController@sendTelegram', 'as' => 'client.bot.send']);
+
+    Route::get('shop', ['uses' => 'MainController@shop', 'as' => 'client.shop']);
 });

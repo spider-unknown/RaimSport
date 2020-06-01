@@ -1,5 +1,13 @@
 @extends('client.layouts.client')
 
+@section('styles')
+    <style>
+        .req-button {
+            display: none;
+        }
+    </style>
+@endsection
+
 @section('content')
     <section class="ftco-section ftco-no-pt ftco-no-pb bg-light ftco-appointment">
         <div class="container">
@@ -66,10 +74,8 @@
                 </div>
                 <div class="col-lg-5 d-flex align-items-stretch">
                     <div class="bg-white">
-                        <div class="w-100 heading-title bg-primary text-center">
-                            <h2 class="mb-0">Оставить заявку</h2>
-                        </div>
-                        <form action="{{route('client.bot.send')}}" method="POST" class="appointment bg-white p-4 p-md-5">
+                        <form action="{{route('client.bot.send')}}" method="POST"
+                              class="appointment bg-white p-4 p-md-5">
                             {{csrf_field()}}
                             <div class="row">
                                 <div class="col-md-12">
@@ -102,14 +108,16 @@
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" name="phone" class="form-control" placeholder="Номер телефона">
+                                        <input type="text" name="phone" class="form-control"
+                                               placeholder="Номер телефона">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <div class="input-wrap">
                                             <div class="icon"><span class="fa fa-calendar"></span></div>
-                                            <input type="text" name="date" class="form-control appointment_date" placeholder="Дата">
+                                            <input type="text" name="date" class="form-control appointment_date"
+                                                   placeholder="Дата">
                                         </div>
                                     </div>
                                 </div>

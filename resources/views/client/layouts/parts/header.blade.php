@@ -35,7 +35,7 @@
                 <span class="fa fa-bars"></span> Меню
             </button>
             <div class="req-button order-lg-last">
-                <a href="#">Оставить заявку</a>
+                <a href="{{route('client.index')}}">Оставить заявку</a>
             </div>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mr-auto">
@@ -56,6 +56,9 @@
 
                     <li class="nav-item {{(Request::is('contact') ? 'active' : '')}}"><a
                                 href="{{route('client.contact')}}" class="nav-link">Контакты</a></li>
+
+                    <li class="nav-item {{(Request::is('shop') ? 'active' : '')}}"><a
+                                href="{{route('client.shop')}}" class="nav-link">Магазин</a></li>
                 </ul>
             </div>
         </div>
