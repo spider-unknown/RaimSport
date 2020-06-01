@@ -20,8 +20,11 @@ class MainController extends WebBaseController
 {
     public function index()
     {
-        $services = Service::limit(10)->get();
-        return view('client.index', compact('services'));
+        $services_all = Service::all();
+        $projects = Project::where('is_visible', true)->limit(8)->get();
+        $notes = Note::orderBy('created_at', 'desc')->limit(5)->get();
+        $blogs = Blog::orderBy('created_at', 'desc')->limit(3)->get();
+        return view('client.index', compact('projects', 'services_all', 'notes', 'blogs'));
     }
 
     public function service($id)
@@ -33,6 +36,7 @@ class MainController extends WebBaseController
         }
         return view('client.serviceSingle', compact('service'));
     }
+
 
     public function services()
     {
@@ -78,11 +82,28 @@ class MainController extends WebBaseController
 
         $message = $service . "\n" . $name . "\n" . $email . "\n" . $date . "\n" . $phone . "\n" . $extra . "\n";
         Telegram::sendMessage([
-            'chat_id' => env('TELEGRAM_CHAT_ID', ''),
+            'chat_id' => '-1001322675781',
             'parse_mode' => 'HTML',
             'text' => $message
         ]);
         return redirect()->route('client.index');
+    }
+
+    public function sendTelegramTheme(Request $request)
+    {
+        $name = 'Имя: ' . $request->name;
+        $email = 'Почта: ' . $request->email;
+        $extra = 'Дополнительно: ' . $request->comment;
+        $theme = 'Тема: ' . $request->theme;
+        $phone = 'Телефон: ' . $request->phone;
+
+        $message = $theme . "\n" . $name . "\n" . $email . "\n" . $phone . "\n" . $extra . "\n";
+        Telegram::sendMessage([
+            'chat_id' => '-1001322675781',
+            'parse_mode' => 'HTML',
+            'text' => $message
+        ]);
+        return redirect()->route('client.contact');
     }
 
     public function botTest()

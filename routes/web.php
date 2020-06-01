@@ -113,4 +113,5 @@ Route::group(['namespace' => 'Client'], function () {
     Route::get('/bot-test', ['uses' => 'MainController@botTest', 'as' => 'client.bot']);
     Route::get('/bot-test', ['uses' => 'MainController@botTest', 'as' => 'client.bot']);
     Route::post('/bot/send/request', ['uses' => 'MainController@sendTelegram', 'as' => 'client.bot.send']);
+    Route::post('/bot/send/contact/us', ['uses' => 'MainController@sendTelegramTheme', 'as' => 'client.bot.send.contact']);
 });
