@@ -18,7 +18,8 @@ class MainController extends WebBaseController
 {
     public function index()
     {
-        return view('client.index');
+        $services = Service::limit(10)->get();
+        return view('client.index', compact('services'));
     }
 
     public function service($id)

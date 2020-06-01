@@ -142,8 +142,8 @@
                     <div class="block-18 text-center">
                         <div class="text">
                             <div class="icon"><span class="fa fa-calendar"></span></div>
-                            <strong class="number" data-number="45">0</strong>
-                            <span>Years of Experienced</span>
+                            <strong class="number" data-number="8">0</strong>
+                            <span>Лет опыта</span>
                         </div>
                     </div>
                 </div>
@@ -151,8 +151,8 @@
                     <div class="block-18 text-center">
                         <div class="text">
                             <div class="icon"><span class="fa fa-briefcase"></span></div>
-                            <strong class="number" data-number="8500">0</strong>
-                            <span>Project completed</span>
+                            <strong class="number" data-number="31">0</strong>
+                            <span>Сделанных проектов</span>
                         </div>
                     </div>
                 </div>
@@ -160,8 +160,8 @@
                     <div class="block-18 text-center">
                         <div class="text">
                             <div class="icon"><span class="fa fa-users"></span></div>
-                            <strong class="number" data-number="2342">0</strong>
-                            <span>Happy Clients</span>
+                            <strong class="number" data-number="31">0</strong>
+                            <span>Довольных клиентов</span>
                         </div>
                     </div>
                 </div>
@@ -170,13 +170,14 @@
                         <div class="text">
                             <div class="icon"><span class="fa fa-bar-chart"></span></div>
                             <strong class="number" data-number="30">0</strong>
-                            <span>Business Partners</span>
+                            <span>Бизнес партнеров</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <section class="ftco-section">
         <div class="container">
@@ -197,22 +198,6 @@
                                 <li class="nav-item text-left">
                                     <a class="nav-link py-4" data-toggle="tab" href="#services-2"><span
                                                 class="flaticon-roof-1 mr-2"></span> Waterproofing</a>
-                                </li>
-                                <li class="nav-item text-left">
-                                    <a class="nav-link py-4" data-toggle="tab" href="#services-3"><span
-                                                class="flaticon-roof-5 mr-2"></span> Industrial Roofing</a>
-                                </li>
-                                <li class="nav-item text-left">
-                                    <a class="nav-link py-4" data-toggle="tab" href="#services-4"><span
-                                                class="flaticon-roof-2 mr-2"></span> Residential Roofing</a>
-                                </li>
-                                <li class="nav-item text-left">
-                                    <a class="nav-link py-4" data-toggle="tab" href="#services-5"><span
-                                                class="flaticon-roof-3 mr-2"></span> Gutter Cleaning</a>
-                                </li>
-                                <li class="nav-item text-left">
-                                    <a class="nav-link border-bottom py-4" data-toggle="tab" href="#services-6"><span
-                                                class="flaticon-roof-4 mr-2"></span> Commercial Roofing</a>
                                 </li>
                             </ul>
                         </div>
@@ -239,78 +224,6 @@
                                 </div>
                                 <div class="tab-pane container p-0 fade" id="services-2">
                                     <h3><a href="#">Waterproofing</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-                                        right at the coast of the Semantics, a large language ocean.</p>
-                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad
-                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-                                        didn’t listen. She packed her seven versalia, put her initial into the belt and
-                                        made herself on the way.</p>
-                                    <ul>
-                                        <li><span class="fa fa-check"></span>The Big Oxmox advised her not to do so</li>
-                                        <li><span class="fa fa-check"></span>Far far away, behind the word mountains
-                                        </li>
-                                        <li><span class="fa fa-check"></span>Separated they live in Bookmarksgrove</li>
-                                        <li><span class="fa fa-check"></span>She packed her seven versalia</li>
-                                        <li><span class="fa fa-check"></span>Little Blind Text didn’t listen</li>
-                                    </ul>
-                                </div>
-                                <div class="tab-pane container p-0 fade" id="services-3">
-                                    <h3><a href="#">Industrial Roofing</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-                                        right at the coast of the Semantics, a large language ocean.</p>
-                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad
-                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-                                        didn’t listen. She packed her seven versalia, put her initial into the belt and
-                                        made herself on the way.</p>
-                                    <ul>
-                                        <li><span class="fa fa-check"></span>The Big Oxmox advised her not to do so</li>
-                                        <li><span class="fa fa-check"></span>Far far away, behind the word mountains
-                                        </li>
-                                        <li><span class="fa fa-check"></span>Separated they live in Bookmarksgrove</li>
-                                        <li><span class="fa fa-check"></span>She packed her seven versalia</li>
-                                        <li><span class="fa fa-check"></span>Little Blind Text didn’t listen</li>
-                                    </ul>
-                                </div>
-                                <div class="tab-pane container p-0 fade" id="services-4">
-                                    <h3><a href="#">Residential Roofing</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-                                        right at the coast of the Semantics, a large language ocean.</p>
-                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad
-                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-                                        didn’t listen. She packed her seven versalia, put her initial into the belt and
-                                        made herself on the way.</p>
-                                    <ul>
-                                        <li><span class="fa fa-check"></span>The Big Oxmox advised her not to do so</li>
-                                        <li><span class="fa fa-check"></span>Far far away, behind the word mountains
-                                        </li>
-                                        <li><span class="fa fa-check"></span>Separated they live in Bookmarksgrove</li>
-                                        <li><span class="fa fa-check"></span>She packed her seven versalia</li>
-                                        <li><span class="fa fa-check"></span>Little Blind Text didn’t listen</li>
-                                    </ul>
-                                </div>
-                                <div class="tab-pane container p-0 fade" id="services-5">
-                                    <h3><a href="#">Gutter Cleaning</a></h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
-                                        right at the coast of the Semantics, a large language ocean.</p>
-                                    <p>The Big Oxmox advised her not to do so, because there were thousands of bad
-                                        Commas, wild Question Marks and devious Semikoli, but the Little Blind Text
-                                        didn’t listen. She packed her seven versalia, put her initial into the belt and
-                                        made herself on the way.</p>
-                                    <ul>
-                                        <li><span class="fa fa-check"></span>The Big Oxmox advised her not to do so</li>
-                                        <li><span class="fa fa-check"></span>Far far away, behind the word mountains
-                                        </li>
-                                        <li><span class="fa fa-check"></span>Separated they live in Bookmarksgrove</li>
-                                        <li><span class="fa fa-check"></span>She packed her seven versalia</li>
-                                        <li><span class="fa fa-check"></span>Little Blind Text didn’t listen</li>
-                                    </ul>
-                                </div>
-                                <div class="tab-pane container p-0 fade" id="services-6">
-                                    <h3><a href="#">Commercial Roofing</a></h3>
                                     <p>Far far away, behind the word mountains, far from the countries Vokalia and
                                         Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
                                         right at the coast of the Semantics, a large language ocean.</p>
@@ -649,88 +562,4 @@
         </div>
     </section>
 
-    <section class="ftco-section bg-light">
-        <div class="container">
-            <div class="row justify-content-center pb-5 mb-3">
-                <div class="col-md-7 heading-section text-center ftco-animate">
-                    <span class="subheading">Price &amp; Plans</span>
-                    <h2>Pricing</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <span class="excerpt d-block">Standard</span>
-                            <span class="price"><sup>$</sup> <span class="number">49</span></span>
-
-                            <ul class="pricing-text mb-5">
-                                <li><span class="fa fa-check mr-2"></span>1 month dedicated training</li>
-                                <li><span class="fa fa-check mr-2"></span>24/7 in touch on the phone</li>
-                                <li><span class="fa fa-check mr-2"></span>Consultation hours</li>
-                                <li><span class="fa fa-check mr-2"></span>Personal visit</li>
-                                <li><span class="fa fa-check mr-2"></span>meet &amp; greet</li>
-                            </ul>
-
-                            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <span class="excerpt d-block">Basic</span>
-                            <span class="price active"><sup>$</sup> <span class="number">79</span></span>
-
-                            <ul class="pricing-text mb-5">
-                                <li><span class="fa fa-check mr-2"></span>1 month dedicated training</li>
-                                <li><span class="fa fa-check mr-2"></span>24/7 in touch on the phone</li>
-                                <li><span class="fa fa-check mr-2"></span>Consultation hours</li>
-                                <li><span class="fa fa-check mr-2"></span>Personal visit</li>
-                                <li><span class="fa fa-check mr-2"></span>meet &amp; greet</li>
-                            </ul>
-
-                            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <span class="excerpt d-block">Standard</span>
-                            <span class="price"><sup>$</sup> <span class="number">109</span></span>
-
-                            <ul class="pricing-text mb-5">
-                                <li><span class="fa fa-check mr-2"></span>1 month dedicated training</li>
-                                <li><span class="fa fa-check mr-2"></span>24/7 in touch on the phone</li>
-                                <li><span class="fa fa-check mr-2"></span>Consultation hours</li>
-                                <li><span class="fa fa-check mr-2"></span>Personal visit</li>
-                                <li><span class="fa fa-check mr-2"></span>meet &amp; greet</li>
-                            </ul>
-
-                            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
-                    <div class="block-7">
-                        <div class="text-center">
-                            <span class="excerpt d-block">Professional</span>
-                            <span class="price"><sup>$</sup> <span class="number">149</span></span>
-
-                            <ul class="pricing-text mb-5">
-                                <li><span class="fa fa-check mr-2"></span>1 month dedicated training</li>
-                                <li><span class="fa fa-check mr-2"></span>24/7 in touch on the phone</li>
-                                <li><span class="fa fa-check mr-2"></span>Consultation hours</li>
-                                <li><span class="fa fa-check mr-2"></span>Personal visit</li>
-                                <li><span class="fa fa-check mr-2"></span>meet &amp; greet</li>
-                            </ul>
-
-                            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 @endsection
