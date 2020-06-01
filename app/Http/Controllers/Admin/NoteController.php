@@ -24,6 +24,7 @@ class NoteController extends WebBaseController
     public function store(NoteStoreAndUpdateRequest $request)
     {
         Note::create($request->all());
+        $this->added();
         return redirect()->route('note.index');
     }
 

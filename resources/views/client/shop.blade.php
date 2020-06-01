@@ -28,7 +28,8 @@
                                         <div class="card-body">
                                             <h5 class="card-title">{{$product->name}}</h5>
                                             <p class="card-text">{{$product->price}}тг</p>
-                                            <a href="#" class="btn btn-primary">Смотреть</a>
+                                            <a href="{{route('client.shop.single', ['id' => $product->id])}}"
+                                               class="btn btn-primary">Смотреть</a>
                                         </div>
                                     </div>
                                 </div>

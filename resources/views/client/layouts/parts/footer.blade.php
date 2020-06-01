@@ -81,6 +81,11 @@
                                     <span class="icon fa fa-paper-plane"></span>
                                     <span class="text">raimsports@gmail.com</span></a>
                             </li>
+                            <li>
+                                <a href="{{route('login')}}">
+                                    ВХОД
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

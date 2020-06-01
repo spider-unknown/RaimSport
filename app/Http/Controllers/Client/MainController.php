@@ -88,6 +88,7 @@ class MainController extends WebBaseController
             'parse_mode' => 'HTML',
             'text' => $message
         ]);
+        $this->makeToast('success', 'Ваша заявка отправлена! Ожидайте обратной связи!');
         return redirect()->route('client.index');
     }
 
@@ -105,7 +106,8 @@ class MainController extends WebBaseController
             'parse_mode' => 'HTML',
             'text' => $message
         ]);
-        return redirect()->route('client.contact');
+        $this->makeToast('success', 'Ваша заявка отправлена! Ожидайте обратной связи!');
+        return redirect()->back();
     }
 
     public function botTest()
@@ -139,6 +141,16 @@ class MainController extends WebBaseController
             $products = Product::paginate(9);
         }
         return view('client.shop', compact('products', 'categories', 'categoryId'));
+    }
+
+    public function itemSingle($id)
+    {
+        $product = Product::with('category')->find($id);
+        if (!$product) {
+            $this->notFound();
+            return redirect()->back();
+        }
+        return view('client.itemSingle', compact('product'));
     }
 
 }

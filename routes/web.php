@@ -21,13 +21,16 @@ Route::get('/secure/config/key-generate', ['uses' => 'ConfigController@keyGenera
 Route::get('/secure/config/optimize', ['uses' => 'ConfigController@optimize']);
 Route::get('/config/locale/{locale}', ['as' => 'locale', 'uses' => 'LocalizationController@index']);
 
-Auth::routes();
 
 Route::group(['namespace' => 'Auth'], function () {
 
-
+    Route::get('login', ['as' => 'login', 'uses' => 'LoginController@showLoginForm']);
+    Route::post('login', ['as' => 'login.post', 'uses' => 'LoginController@login']);
     Route::post('logout', ['as' => 'logout', 'uses' => 'LoginController@logout']);
-
+    Route::get('password/reset', ['as' => 'password.reset', 'uses' => 'ForgotPasswordController@showLinkRequestForm']);
+    Route::post('password/email', ['as' => 'password.email', 'uses' => 'ForgotPasswordController@sendResetLinkEmail']);
+    Route::get('password/reset/{token}', ['as' => 'password.reset.token', 'uses' => 'ResetPasswordController@showResetForm']);
+    Route::post('password/reset', ['as' => 'password.reset.post', 'uses' => 'ResetPasswordController@reset']);
 });
 
 Route::group(['middleware' => ['auth']], function () {
@@ -115,5 +118,6 @@ Route::group(['namespace' => 'Client'], function () {
     Route::post('/bot/send/request', ['uses' => 'MainController@sendTelegram', 'as' => 'client.bot.send']);
 
     Route::get('shop', ['uses' => 'MainController@shop', 'as' => 'client.shop']);
+    Route::get('product/{id}', ['uses' => 'MainController@itemSingle', 'as' => 'client.shop.single'])->where('id', '[0-9]+');
     Route::post('/bot/send/contact/us', ['uses' => 'MainController@sendTelegramTheme', 'as' => 'client.bot.send.contact']);
 });
