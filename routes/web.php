@@ -80,6 +80,14 @@ Route::group(['middleware' => ['auth']], function () {
         Route::delete('service/delete/{service_id}', ['uses' => 'ServiceController@destroy', 'as' => 'service.delete'])->where('service_id', '[0-9]+');
 
 
+        Route::get('note', ['uses' => 'NoteController@index', 'as' => 'note.index']);
+        Route::get('note/create', ['uses' => 'NoteController@create', 'as' => 'note.create']);
+        Route::post('note/store', ['uses' => 'NoteController@store', 'as' => 'note.store']);
+        Route::get('note/edit/{note_id}', ['uses' => 'NoteController@edit', 'as' => 'note.edit'])->where('note_id', '[0-9]+');
+        Route::post('note/update/{note_id}', ['uses' => 'NoteController@update', 'as' => 'note.update'])->where('note_id', '[0-9]+');
+        Route::delete('note/delete/{note_id}', ['uses' => 'NoteController@destroy', 'as' => 'note.delete'])->where('note_id', '[0-9]+');
+
+
         Route::get('products', ['uses' => 'ProductController@index', 'as' => 'product.index']);
         Route::get('product/create', ['uses' => 'ProductController@create', 'as' => 'product.create']);
         Route::post('product/store', ['uses' => 'ProductController@store', 'as' => 'product.store']);
@@ -92,6 +100,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::group(['namespace' => 'Client'], function () {
     Route::get('/', ['uses' => 'MainController@index', 'as' => 'client.index']);
+    Route::get('/services/{id}', ['uses' => 'MainController@service', 'as' => 'client.service']);
     Route::get('/services', ['uses' => 'MainController@services', 'as' => 'client.services']);
     Route::get('/project', ['uses' => 'MainController@project', 'as' => 'client.project']);
     Route::get('/contact', ['uses' => 'MainController@contact', 'as' => 'client.contact']);

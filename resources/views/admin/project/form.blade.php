@@ -22,7 +22,6 @@
         <label class="bmd-label-floating" for="description">Описание</label>
         <textarea class="form-control"
                   rows="5"
-                  required
                   id="description"
                   name="description">{{$project ? $project->description : old('description')}}</textarea>
     </div>
