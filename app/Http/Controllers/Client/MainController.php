@@ -10,11 +10,11 @@ namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\WebBaseController;
 use App\Models\Blog;
+use App\Models\Note;
 use App\Models\Project;
+use App\Models\Service;
 use Illuminate\Http\Request;
 use Telegram\Bot\Laravel\Facades\Telegram;
-
-use App\Models\Service;
 
 class MainController extends WebBaseController
 {
@@ -67,15 +67,16 @@ class MainController extends WebBaseController
         return view('client.projectSingle', compact('project'));
     }
 
-    public function sendTelegram(Request $request) {
-        $name = 'Имя: '. $request->name;
-        $email = 'Почта: '. $request->email;
-        $date = 'Дата: '. $request->date. ' '. $request->time;
-        $extra = 'Дополнительно: '. $request->comment;
-        $phone = 'Телефон: '. $request->phone;
-        $service = 'Услуга: '. $request->service;
+    public function sendTelegram(Request $request)
+    {
+        $name = 'Имя: ' . $request->name;
+        $email = 'Почта: ' . $request->email;
+        $date = 'Дата: ' . $request->date . ' ' . $request->time;
+        $extra = 'Дополнительно: ' . $request->comment;
+        $phone = 'Телефон: ' . $request->phone;
+        $service = 'Услуга: ' . $request->service;
 
-        $message = $service ."\n".$name ."\n".$email ."\n".$date ."\n".$phone ."\n".$extra ."\n";
+        $message = $service . "\n" . $name . "\n" . $email . "\n" . $date . "\n" . $phone . "\n" . $extra . "\n";
         Telegram::sendMessage([
             'chat_id' => env('TELEGRAM_CHAT_ID', ''),
             'parse_mode' => 'HTML',
@@ -84,7 +85,8 @@ class MainController extends WebBaseController
         return redirect()->route('client.index');
     }
 
-    public function botTest() {
+    public function botTest()
+    {
         $activity = Telegram::getUpdates();
         dd($activity);
     }
@@ -100,7 +102,7 @@ class MainController extends WebBaseController
     public function about()
     {
         $services = Service::limit(10)->get();
-        $notes = Note::all();
+        $notes =  Note::all();
         return view('client.about', compact('services', 'notes'));
     }
 
