@@ -1,5 +1,4 @@
 @extends('client.layouts.client')
-
 @section('content')
    	<section class="ftco-section">
         <div class="container">

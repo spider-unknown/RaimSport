@@ -69,15 +69,16 @@
                         <div class="w-100 heading-title bg-primary text-center">
                             <h2 class="mb-0">Оставить заявку</h2>
                         </div>
-                        <form action="#" class="appointment bg-white p-4 p-md-5">
+                        <form action="{{route('client.bot.send')}}" method="POST" class="appointment bg-white p-4 p-md-5">
+                            {{csrf_field()}}
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <div class="form-field">
                                             <div class="select-wrap">
                                                 <div class="icon"><span class="fa fa-chevron-down"></span></div>
-                                                <select name="" id="" class="form-control">
-                                                    <option value="">Выберите услугу</option>
+                                                <select name="service" id="" class="form-control">
+                                                    <option value="test">Выберите услугу</option>
                                                     <option value="">Skylights</option>
                                                     <option value="">Waterproofing</option>
                                                     <option value="">Industrial Roofing</option>
@@ -91,19 +92,24 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Ваше имя">
+                                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email адрес">
+                                        <input type="text" name="email" class="form-control" placeholder="Email адрес">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" name="phone" class="form-control" placeholder="Номер телефона">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <div class="input-wrap">
                                             <div class="icon"><span class="fa fa-calendar"></span></div>
-                                            <input type="text" class="form-control appointment_date" placeholder="Дата">
+                                            <input type="text" name="date" class="form-control appointment_date" placeholder="Дата">
                                         </div>
                                     </div>
                                 </div>
@@ -111,7 +117,7 @@
                                     <div class="form-group">
                                         <div class="input-wrap">
                                             <div class="icon"><span class="fa fa-clock-o"></span></div>
-                                            <input type="text" class="form-control appointment_time"
+                                            <input type="text" name="time" class="form-control appointment_time"
                                                    placeholder="Время">
                                         </div>
                                     </div>

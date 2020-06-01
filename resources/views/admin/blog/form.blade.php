@@ -16,8 +16,7 @@
         <div class="form-group">
             <div class="form-group">
                 <label class="bmd-label-floating">Описание</label>
-                <textarea class="form-control" rows="5" id="description"
-                          name="description">{{$blog ? $blog->description : old('description')}}</textarea>
+                <textarea class="form-control" rows="5" id="description" name="description">{{$blog ? $blog->description : old('description')}}</textarea>
             </div>
         </div>
     </div>

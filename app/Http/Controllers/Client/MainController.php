@@ -10,8 +10,10 @@ namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\WebBaseController;
 use App\Models\Blog;
-use App\Models\Note;
 use App\Models\Project;
+use Illuminate\Http\Request;
+use Telegram\Bot\Laravel\Facades\Telegram;
+
 use App\Models\Service;
 
 class MainController extends WebBaseController
@@ -63,6 +65,28 @@ class MainController extends WebBaseController
     {
         $project = Project::where('id', $id)->with('galleries')->first();
         return view('client.projectSingle', compact('project'));
+    }
+
+    public function sendTelegram(Request $request) {
+        $name = 'Имя: '. $request->name;
+        $email = 'Почта: '. $request->email;
+        $date = 'Дата: '. $request->date. ' '. $request->time;
+        $extra = 'Дополнительно: '. $request->comment;
+        $phone = 'Телефон: '. $request->phone;
+        $service = 'Услуга: '. $request->service;
+
+        $message = $service ."\n".$name ."\n".$email ."\n".$date ."\n".$phone ."\n".$extra ."\n";
+        Telegram::sendMessage([
+            'chat_id' => env('TELEGRAM_CHAT_ID', ''),
+            'parse_mode' => 'HTML',
+            'text' => $message
+        ]);
+        return redirect()->route('client.index');
+    }
+
+    public function botTest() {
+        $activity = Telegram::getUpdates();
+        dd($activity);
     }
 
     public function blog()

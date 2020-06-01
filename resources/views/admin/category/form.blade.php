@@ -22,7 +22,6 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-
                 <label class="bmd-label-floating" for="description">Описание</label>
                 <textarea class="form-control"
                           rows="5"
