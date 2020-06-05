@@ -20,9 +20,9 @@
                             <p>
                                 <img src="images/image_1.jpg" alt="" class="img-fluid">
                             </p>
-                            @if($category)
-                                <h2 class="mb-3">{{$category->name}}</h2>
-                                {!! $category->description !!}
+                            @if($currentCategory)
+                                <h2 class="mb-3">{{$currentCategory->name}}</h2>
+                                {!! $currentCategory->description !!}
                             @else
                                 <h2 class="mb-3">{{$branch->name}}</h2>
                                 {!! $branch->description !!}

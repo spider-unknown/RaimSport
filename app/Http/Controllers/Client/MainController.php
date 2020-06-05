@@ -157,14 +157,14 @@ class MainController extends WebBaseController
     public function branch($id, Request $request) {
         $branch = Branch::where('id', $id)->where('is_visible', true)->first();
         $categories = $branch->categories;
-        $category = null;
+        $currentCategory = null;
         $categoryId = null;
         $projects = array();
         if($request->categoryId) {
             $categoryId = $request->categoryId;
-            $category =  $categories->where('id', $categoryId)->first();
+            $currentCategory =  $categories->where('id', $categoryId)->first();
             $projects = Project::where('category_id', $categoryId)->where('is_visible', true)->get();
         }
-        return view('client.branch', compact('categories', 'branch', 'category', 'categoryId', 'projects'));
+        return view('client.branch', compact('categories', 'branch', 'currentCategory', 'categoryId', 'projects'));
     }
 }
