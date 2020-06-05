@@ -10,6 +10,7 @@ namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\WebBaseController;
 use App\Models\Blog;
+use App\Models\Branch;
 use App\Models\Category;
 use App\Models\Note;
 use App\Models\Product;
@@ -134,7 +135,7 @@ class MainController extends WebBaseController
     public function shop(Request $request)
     {
         $categoryId = $request->input('categoryId');
-        $categories = Category::all();
+        $categories = Category::where('is_visible', true)->get();
         if ($categoryId) {
             $products = Product::where('category_id', $categoryId)->paginate(9);
         } else {
@@ -153,4 +154,17 @@ class MainController extends WebBaseController
         return view('client.itemSingle', compact('product'));
     }
 
+    public function branch($id, Request $request) {
+        $branch = Branch::where('id', $id)->where('is_visible', true)->first();
+        $categories = $branch->categories;
+        $category = null;
+        $categoryId = null;
+        $projects = array();
+        if($request->categoryId) {
+            $categoryId = $request->categoryId;
+            $category =  $categories->where('id', $categoryId)->first();
+            $projects = Project::where('category_id', $categoryId)->where('is_visible', true)->get();
+        }
+        return view('client.branch', compact('categories', 'branch', 'category', 'categoryId', 'projects'));
+    }
 }

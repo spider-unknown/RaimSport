@@ -11,6 +11,15 @@
                     <h2 class="mb-3">{{$project->name}}</h2>
                     {!! $project->description !!}
                 </div>
+                <div class="col-lg-4 sidebar pr-lg-5 ftco-animate">
+                    <div class="sidebar-box ftco-animate">
+                        <div class="categories">
+                            <li>
+                                <a href="{{route('client.project')}}">Назад <span class="fa fa-chevron-left"></span></a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="row no-gutters">
                 @foreach($project->galleries as $gallery)

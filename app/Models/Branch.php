@@ -14,4 +14,9 @@ class Branch extends Model
     protected $fillable = [
         'name', 'name_in_menu', 'description', 'is_visible'
     ];
+
+    public function categories() {
+        return $this->hasMany(Category::class, 'branch_id', 'id')->where('is_visible', true);
+
+    }
 }

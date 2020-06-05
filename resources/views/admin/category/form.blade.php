@@ -24,7 +24,7 @@
     <div class="col-md-12">
                 <label class="bmd-label-floating" for="description">Описание</label>
                 <textarea class="form-control"
-                          rows="5"
+                          rows="10"
                           id="description"
                           name="description">{{$category ? $category->description : old('description')}}</textarea>
             </div>

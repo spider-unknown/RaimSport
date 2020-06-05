@@ -34,9 +34,9 @@
                     aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fa fa-bars"></span> Меню
             </button>
-            <div class="req-button order-lg-last">
-                <a href="{{route('client.index')}}">Оставить заявку</a>
-            </div>
+{{--            <div class="req-button order-lg-last">--}}
+{{--                <a href="{{route('client.index')}}">Оставить заявку</a>--}}
+{{--            </div>--}}
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item {{(Request::is('/') ? 'active' : '')}}"><a
@@ -44,15 +44,16 @@
 
                     <li class="nav-item {{(Request::is('about') ? 'active' : '')}}"><a
                                 href="{{route('client.about')}}" class="nav-link">О нас</a></li>
-
-                    <li class="nav-item {{(Request::is('services') ? 'active' : '')}}"><a
-                                href="{{route('client.services')}}" class="nav-link">Услуги</a></li>
+                    @foreach(App\Models\Branch::where('is_visible', true)->limit(4)->get() as $branch)
+                        <li class="nav-item {{(Request::is('branch/'. $branch->id) ? 'active' : '')}}"><a
+                                href="{{route('client.branch', ['id' => $branch->id])}}" class="nav-link">{{$branch->name_in_menu}}</a></li>
+                    @endforeach
 
                     <li class="nav-item {{(Request::is('project') ? 'active' : '')}}"><a
                                 href="{{route('client.project')}}" class="nav-link">Проекты</a></li>
 
-                    <li class="nav-item {{(Request::is('blog') ? 'active' : '')}}"><a
-                                href="{{route('client.blog')}}" class="nav-link">Блог</a></li>
+{{--                    <li class="nav-item {{(Request::is('blog') ? 'active' : '')}}"><a--}}
+{{--                                href="{{route('client.blog')}}" class="nav-link">Блог</a></li>--}}
 
                     <li class="nav-item {{(Request::is('contact') ? 'active' : '')}}"><a
                                 href="{{route('client.contact')}}" class="nav-link">Контакты</a></li>
