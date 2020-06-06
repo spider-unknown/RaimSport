@@ -98,6 +98,9 @@ Route::group(['middleware' => ['auth']], function () {
         Route::post('product/update/{id}', ['uses' => 'ProductController@update', 'as' => 'product.update'])->where('id', '[0-9]+');
         Route::delete('product/delete/{id}', ['uses' => 'ProductController@destroy', 'as' => 'product.delete'])->where('id', '[0-9]+');
 
+        Route::get('settings', ['uses' => 'SettingsController@edit', 'as' => 'settings.edit']);
+        Route::post('settings/update', ['uses' => 'SettingsController@update', 'as' => 'settings.update']);
+
     });
 });
 

@@ -51,5 +51,11 @@
                 <p>Продукты</p>
             </a>
         </li>
+        <li class="nav-item {{{ (Request::is('admin/settings') ? 'active' : '') }}}">
+            <a class="nav-link" href="{{route('settings.edit')}}">
+                <i class="material-icons">settings</i>
+                <p>Настройки</p>
+            </a>
+        </li>
     </ul>
 </div>

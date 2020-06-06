@@ -9,43 +9,37 @@
                     <div class="row justify-content-start py-5">
                         <div class="col-md-12 heading-section ftco-animate">
                             <span class="subheading">Добро пожаловать в Raimsport</span>
-                            <h2 class="mb-4">RaimSport - компания создана для продвижения Казахстанского спорта!</h2>
+                            <h2 class="mb-4">{{$main->title}}</h2>
                             <p>
-                                Наша команда работает на территории нашей страны в сфере проектирования, строительства,
-                                модернизации спортивных объектов любого уровня сложности. За время существования нами
-                                были воплощены много проектов, которые благополучно работают и приносят людям пользу по
-                                сей день. Использую высокие мировые стандарты в спортивных покрытиях, мы внедряем все
-                                лучшее в наши проекты, это касается всего остального, что связано с материалами в
-                                строительстве спортивных объектов. Мы всегда готовы помочь, и поделиться знанием, опытом
-                                для реализации новых идей.
+                                {!!$main->description!!}
                             </p>
+
                             <div class="tabulation-2 mt-4">
                                 <ul class="nav nav-pills nav-fill d-md-flex d-block">
                                     <li class="nav-item mb-md-0 mb-2">
-                                        <a class="nav-link active py-2" data-toggle="tab" href="#home1">Наша миссия</a>
+                                        <a class="nav-link active py-2" data-toggle="tab" href="#home1">{{$child1->title}}</a>
                                     </li>
                                     <li class="nav-item px-lg-2 mb-md-0 mb-2">
-                                        <a class="nav-link py-2" data-toggle="tab" href="#home2">Наше видение</a>
+                                        <a class="nav-link py-2" data-toggle="tab" href="#home2">{{$child2->title}}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link py-2 mb-md-0 mb-2" data-toggle="tab" href="#home3">Наши
-                                            ценности</a>
+                                        <a class="nav-link py-2 mb-md-0 mb-2" data-toggle="tab" href="#home3">{{$child3->title}}</a>
                                     </li>
                                 </ul>
                                 <div class="tab-content rounded mt-2">
                                     <div class="tab-pane container p-0 active" id="home1">
                                         <p>
-                                            Создать в Казахстане благоприятные условия для развития спорта
+                                            {!!$child1->description!!}
                                         </p>
                                     </div>
                                     <div class="tab-pane container p-0 fade" id="home2">
                                         <p>
-                                            Спортивный Казахстан
+                                            {!!$child2->description!!}
                                         </p>
                                     </div>
                                     <div class="tab-pane container p-0 fade" id="home3">
                                         <p>
-                                            Спортивная молодежь
+                                            {!!$child3->description!!}
                                         </p>
                                     </div>
                                 </div>
@@ -60,42 +54,17 @@
     <section class="ftco-counter" id="section-counter">
         <div class="container">
             <div class="row">
+                @foreach($counts as $count)
                 <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
                     <div class="block-18 text-center">
                         <div class="text">
                             <div class="icon"><span class="fa fa-calendar"></span></div>
-                            <strong class="number" data-number="8">0</strong>
-                            <span>Лет опыта</span>
+                            <strong class="number" data-number="{{$count->description}}">{{$count->description}}</strong>
+                            <span>{{$count->title}}</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                    <div class="block-18 text-center">
-                        <div class="text">
-                            <div class="icon"><span class="fa fa-briefcase"></span></div>
-                            <strong class="number" data-number="31">0</strong>
-                            <span>Сделанных проектов</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                    <div class="block-18 text-center">
-                        <div class="text">
-                            <div class="icon"><span class="fa fa-users"></span></div>
-                            <strong class="number" data-number="31">0</strong>
-                            <span>Довольных клиентов</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-                    <div class="block-18 text-center">
-                        <div class="text">
-                            <div class="icon"><span class="fa fa-bar-chart"></span></div>
-                            <strong class="number" data-number="30">0</strong>
-                            <span>Бизнес партнеров</span>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

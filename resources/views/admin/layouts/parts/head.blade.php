@@ -22,7 +22,21 @@
     });
 </script>
 
-
+<script>
+    tinymce.init({
+        selector: '#description2'
+    });
+</script>
+<script>
+    tinymce.init({
+        selector: '#description3'
+    });
+</script>
+<script>
+    tinymce.init({
+        selector: '#description4'
+    });
+</script>
 
 
 @yield('styles')

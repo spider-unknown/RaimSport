@@ -9,6 +9,7 @@
 namespace App\Http\Controllers\Client;
 
 use App\Http\Controllers\WebBaseController;
+use App\Models\AboutUs;
 use App\Models\Blog;
 use App\Models\Branch;
 use App\Models\Category;
@@ -129,7 +130,12 @@ class MainController extends WebBaseController
     {
         $services = Service::limit(10)->get();
         $notes = Note::all();
-        return view('client.about', compact('services', 'notes'));
+        $main = AboutUs::where('type',AboutUs::MAIN)->first();
+        $child1 = AboutUs::where('id',2)->first();
+        $child2 = AboutUs::where('id',3)->first();
+        $child3 = AboutUs::where('id',4)->first();
+        $counts = AboutUs::where('type',AboutUs::COUNT_CHILD)->get();
+        return view('client.about', compact('services', 'notes','main','child1','child2','child3','counts'));
     }
 
     public function shop(Request $request)
