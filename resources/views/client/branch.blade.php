@@ -32,18 +32,17 @@
                     <div class="container">
                         @if(!$currentProduct)
                             <div class="col-lg-9 order-lg-last ftco-animate">
-                            <p>
-                                <img src="images/image_1.jpg" alt="" class="img-fluid">
-                            </p>
-                            @if($currentCategory)
-                                <h2 class="mb-3">{{$currentCategory->name}}</h2>
-                                {!! $currentCategory->description !!}
-                            @else
-                                <h2 class="mb-3">{{$branch->name}}</h2>
-                                {!! $branch->description !!}
-                            @endif
+                                <p>
+                                    <img src="images/image_1.jpg" alt="" class="img-fluid">
+                                </p>
+                                @if($currentCategory)
+                                    <h2 class="mb-3">{{$currentCategory->name}}</h2>
+                                    {!! $currentCategory->description !!}
+                                @else
+                                    <h2 class="mb-3">{{$branch->name}}</h2>
+                                        {!! $branch->description !!}
+                                @endif
                             @if(!empty($products))
-                                <hr>
                                 <div class="row d-flex">
                                     @foreach($products as $product)
                                         <a href="{{route('client.branch', ['categoryId' => $category->id,
@@ -68,15 +67,14 @@
                             <div class="col-lg-9 order-lg-last ftco-animate">
                                 <div class="card">
                                     <div class="card-header">
-                                        <h2 class="mb-1">Наименование: {{$currentProduct->name}}</h2>
+                                        <h3 class="mb-1">Наименование: {{$currentProduct->name}}</h3>
                                     </div>
                                     <div class="card-body">
                                         <p class="mt-1">
                                             <img src="{{asset($currentProduct->img_path)}}" alt="" class="img-fluid">
                                         </p>
-                                        <h2 class="mb-1 text-danger">Цена: {{$product->price}}тг.</h2>
-                                        <h2 class="mb-1">{{$currentProduct->category->name}}</h2>
-
+                                        <h4 class="mb-1 text-danger">Цена: {{$product->price}}тг.</h4>
+                                        <h4 class="mb-1">{{$currentProduct->category->name}}</h4>
                                         <p class="mt-1 mb-1">
                                             {!!$product->description!!}
                                         </p>
