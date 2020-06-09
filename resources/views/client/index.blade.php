@@ -15,58 +15,25 @@
                 <div class="col-lg-7">
                     <div class="row justify-content-start py-5 pr-md-4">
                         <div class="col-md-12 heading-section ftco-animate py-md-4">
-                            <h2 class="mb-4">RAIMSPORT - Будь первым вместе с нами!
-                                КОМПЛЕКСНОЕ СТРОИТЕЛЬСТВО И ОСНАЩЕНИЕ СПОРТИВНЫХ СООРУЖЕНИЙ.</h2>
+                            <h2 class="mb-4">{!! $main->title !!}</h2>
                             <div class="tabulation-2 mt-4">
                                 <ul class="nav nav-pills nav-fill d-md-flex d-block">
-                                    <li class="nav-item mb-md-0 mb-2">
-                                        <a class="nav-link active py-3" data-toggle="tab" href="#home1">Наша миссия</a>
-                                    </li>
-                                    <li class="nav-item px-lg-2 mb-md-0 mb-2">
-                                        <a class="nav-link py-3" data-toggle="tab" href="#home2">Наша деятельность </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link py-3 mb-md-0 mb-2" data-toggle="tab" href="#home3">Наши
-                                            ценности</a>
-                                    </li>
+                                    @foreach($childs as $child)
+                                        <li class="nav-item mb-md-0 mb-2">
+                                            <a class="nav-link  {{$child->id == $childs->first()->id ? 'active' : ''}}
+                                                py-3" data-toggle="tab"
+                                               href="#home{{$child->id}}">{{$child->title}}</a>
+                                        </li>
+                                    @endforeach
                                 </ul>
                                 <div class="tab-content rounded mt-2">
-                                    <div class="tab-pane container p-0 active" id="home1">
-                                        <p>RaimSport - компания создана для продвижения Казахстанского спорта! Наша
-                                            команда работает
-                                            на территории нашей страны в сфере проектирования, строительства,
-                                            модернизации
-                                            спортивных объектов любого уровня сложности. За время существования нами
-                                            были воплощены
-                                            много проектов, которые благополучно работают и приносят людям пользу по сей
-                                            день.
-                                            Используюя высокие мировые стандарты в спортивных покрытиях, мы внедряем все
-                                            лучшее в
-                                            наши проекты, это касается всего остального, что связано с материалами в
-                                            строительстве
-                                            спортивных объектов. Мы всегда готовы помочь, и поделиться знанием, опытом
-                                            для
-                                            реализации новых идей.</p>
+                                    @foreach($childs as $child)
+                                    <div class="tab-pane container
+                                        {{$child->id == $childs->first()->id ? 'active' : ''}}
+                                        p-0" id="home{{$child->id}}">
+                                        {!! $child->description !!}
                                     </div>
-                                    <div class="tab-pane container p-0 fade" id="home2">
-                                        <p>Основными направлениями деятельности компании RaimSport является:
-                                            Строительство и комплексное оснащение, а также проектирование спортивных
-                                            объектов.
-                                            Поставка спортивных покрытий, сопутствующих материалов для открытых и
-                                            закрытых спортивных сооружений.
-                                            Поставка профессионального спортивного оборудования, тренажеров и инвентаря.
-                                            Благоустройство дворов, поставка детских игровых комплексов.
-                                            Комплексные работы по устройству напольных покрытий, в том числе специальных
-                                            оснований и монтаж спортивных покрытий для всех видов спорта.
-                                            Изготовление малых архитектурных форм (урны, скамейки)</p>
-                                    </div>
-                                    <div class="tab-pane container p-0 fade" id="home3">
-                                        <p>Здоровье нации является безусловной общественной ценностью, приоритетом
-                                            государственной политики, основой национального богатства и национальной
-                                            безопасности Казахстана. Здоровье – это не просто отсутствие болезней, а
-                                            состояние физического благополучия, потребность заниматься спортом, который
-                                            помогает сделать нашу жизнь лучше.</p>
-                                    </div>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -153,8 +120,8 @@
                     <div class="block-18 text-center">
                         <div class="text">
                             <div class="icon"><span class="fa fa-calendar"></span></div>
-                            <strong class="number" data-number="8">0</strong>
-                            <span>Лет опыта</span>
+                            <strong class="number" data-number="{{$counts->first()->description}}">0</strong>
+                            <span>{{$counts->first()->title}}</span>
                         </div>
                     </div>
                 </div>
@@ -162,8 +129,8 @@
                     <div class="block-18 text-center">
                         <div class="text">
                             <div class="icon"><span class="fa fa-briefcase"></span></div>
-                            <strong class="number" data-number="{{$projects->count()}}">0</strong>
-                            <span>Сделанных проектов</span>
+                            <strong class="number" data-number="{{$counts->slice(1)->first()->description}}">0</strong>
+                            <span>{{$counts->slice(1)->first()->title}}</span>
                         </div>
                     </div>
                 </div>
@@ -171,8 +138,8 @@
                     <div class="block-18 text-center">
                         <div class="text">
                             <div class="icon"><span class="fa fa-users"></span></div>
-                            <strong class="number" data-number="{{$notes->count()}}">0</strong>
-                            <span>Довольных клиентов</span>
+                            <strong class="number" data-number="{{$counts->slice(2)->first()->description}}">0</strong>
+                            <span>{{$counts->slice(2)->first()->title}}</span>
                         </div>
                     </div>
                 </div>
@@ -180,8 +147,8 @@
                     <div class="block-18 text-center">
                         <div class="text">
                             <div class="icon"><span class="fa fa-bar-chart"></span></div>
-                            <strong class="number" data-number="{{$projects->count()}}">0</strong>
-                            <span>Бизнес партнеров</span>
+                            <strong class="number" data-number="{{$counts->slice(3)->first()->description}}">0</strong>
+                            <span>{{$counts->slice(3)->first()->title}}</span>
                         </div>
                     </div>
                 </div>

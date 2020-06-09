@@ -28,7 +28,14 @@ class MainController extends WebBaseController
         $projects = Project::where('is_visible', true)->limit(8)->get();
         $notes = Note::orderBy('created_at', 'desc')->limit(5)->get();
         $blogs = Blog::orderBy('created_at', 'desc')->limit(3)->get();
-        return view('client.index', compact('projects', 'services_all', 'notes', 'blogs'));
+
+        $settings = AboutUs::all();
+        $main = $settings->where('type',AboutUs::MAIN)->first();
+        $childs = $settings->where('type',AboutUs::CHILD);
+        $counts = $settings->where('type',AboutUs::COUNT_CHILD);
+
+        return view('client.index', compact('projects', 'services_all', 'notes', 'blogs',
+            'main', 'childs', 'counts'));
     }
 
     public function service($id)
@@ -128,14 +135,9 @@ class MainController extends WebBaseController
 
     public function about()
     {
-        $services = Service::limit(10)->get();
-        $notes = Note::all();
-        $main = AboutUs::where('type',AboutUs::MAIN)->first();
-        $child1 = AboutUs::where('id',2)->first();
-        $child2 = AboutUs::where('id',3)->first();
-        $child3 = AboutUs::where('id',4)->first();
-        $counts = AboutUs::where('type',AboutUs::COUNT_CHILD)->get();
-        return view('client.about', compact('services', 'notes','main','child1','child2','child3','counts'));
+
+        $about_us = AboutUs::where('type',AboutUs::ABOUT_US)->first();
+        return view('client.about', compact('about_us'));
     }
 
     public function shop(Request $request)

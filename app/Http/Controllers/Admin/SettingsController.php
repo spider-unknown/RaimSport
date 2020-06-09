@@ -4,81 +4,80 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\WebBaseController;
 use App\Models\AboutUs;
+use App\Services\FileService;
 use Illuminate\Http\Request;
 
 class SettingsController extends WebBaseController
 {
+
+    protected $fileService;
+
+    public function __construct(FileService $fileService)
+    {
+        $this->fileService = $fileService;
+    }
+
     public function edit()
     {
 
         $main = AboutUs::where('type',AboutUs::MAIN)->first();
         $childs = AboutUs::where('type',AboutUs::CHILD)->get();
         $counts = AboutUs::where('type',AboutUs::COUNT_CHILD)->get();
-        return view('admin.settings.edit', compact('main','childs','counts'));
+        $main_image = AboutUs::where('type',AboutUs::MAIN_IMAGE)->first();
+        $about_us = AboutUs::where('type',AboutUs::ABOUT_US)->first();
+
+        return view('admin.settings.edit', compact('main','childs','counts', 'main_image', 'about_us'));
 
     }
 
     public function update(Request $request)
     {
 
-        $main = AboutUs::find(1);
+        $main = AboutUs::where('type',AboutUs::MAIN)->first();
+        $main_image = AboutUs::where('type',AboutUs::MAIN_IMAGE)->first();
+        $about_us = AboutUs::where('type',AboutUs::ABOUT_US)->first();
+        $childs = AboutUs::where('type',AboutUs::CHILD)->get();
+        $counts = AboutUs::where('type',AboutUs::COUNT_CHILD)->get();
 
         $main->update([
+            'title' => $request->input("title"),
             'description' => $request->description,
 
         ]);
 
-        $child1 = AboutUs::find(2);
-
-        $child1->update([
-            'description' => $request->description2,
-
-        ]);
-
-        $child2 = AboutUs::find(3);
-
-        $child2->update([
-            'description' => $request->description3,
+        $about_us->update([
+            'title' => $request->input("title".$about_us->id),
+            'description' => $request->input("description".$about_us->id),
 
         ]);
 
-        $child3 = AboutUs::find(4);
+        foreach ($childs as $child) {
+            $child->update([
+                'title' => $request->input("title".$child->id),
+                'description' => $request->input("description".$child->id),
 
-        $child3->update([
-            'description' => $request->description4,
+            ]);
+        }
 
-        ]);
+        foreach ($counts as $count) {
+            $count->update([
+                'title' => $request->input("title".$count->id),
+                'description' => $request->input("description".$count->id),
 
+            ]);
+        }
 
-        $count1 = AboutUs::find(5);
+        $path = $main_image->description;
 
-        $count1->update([
-            'description' => $request->description5,
+        if ($request->file('image')) {
+            $path = $this->fileService
+                ->updateWithRemoveOrStore($request->file('image'), AboutUs::DEFAULT_DIRECTORY, $path);
+        }
 
-        ]);
-
-        $count2 = AboutUs::find(6);
-
-        $count2->update([
-            'description' => $request->description6,
-
-        ]);
-        $count3 = AboutUs::find(7);
-
-        $count3->update([
-            'description' => $request->description7,
-
-        ]);
-        $count4 = AboutUs::find(8);
-
-        $count4->update([
-            'description' => $request->description8,
+        $main_image->update([
+            'description' => $path,
 
         ]);
-
-
-
-
         $this->edited();
 
         return redirect()->route('settings.edit');

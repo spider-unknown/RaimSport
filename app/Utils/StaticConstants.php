@@ -12,5 +12,6 @@ namespace App\Utils;
 class StaticConstants
 {
     public const DEFAULT_IMAGE = 'images/default.png';
+    public const DEFAULT_IMAGE_MAIN = 'client/tennis.jpg';
 
 }

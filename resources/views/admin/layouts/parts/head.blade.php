@@ -20,21 +20,19 @@
     tinymce.init({
         selector: '#description'
     });
-</script>
 
-<script>
+    for(var i = 0; i <= 50; i++ ) {
+        tinymce.init({
+            selector: '#title' + i
+        });
+
+        tinymce.init({
+            selector: '#description' + i
+        });
+    }
+
     tinymce.init({
-        selector: '#description2'
-    });
-</script>
-<script>
-    tinymce.init({
-        selector: '#description3'
-    });
-</script>
-<script>
-    tinymce.init({
-        selector: '#description4'
+        selector: '#title'
     });
 </script>
 

@@ -14,7 +14,7 @@
                         <a href="#" class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
                         <a href="#" class="d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                                    class="fa fa-whatsapp"><i class="sr-only">WhatsApp</i></span></a>
                         <a href="#" class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
                         <a href="#" class="d-flex align-items-center justify-content-center"><span
@@ -43,7 +43,7 @@
                                 href="{{route('client.index')}}" class="nav-link">Главная</a></li>
 
                     <li class="nav-item {{(Request::is('about') ? 'active' : '')}}"><a
-                                href="{{route('client.about')}}" class="nav-link">О нас</a></li>
+                                href="{{route('client.about')}}" class="nav-link">О компании</a></li>
                     @foreach(App\Models\Branch::where('is_visible', true)->limit(4)->get() as $branch)
                         <li class="nav-item {{(Request::is('branch/'. $branch->id) ? 'active' : '')}}"><a
                                 href="{{route('client.branch', ['id' => $branch->id])}}" class="nav-link">{{$branch->name_in_menu}}</a></li>
@@ -58,15 +58,19 @@
                     <li class="nav-item {{(Request::is('contact') ? 'active' : '')}}"><a
                                 href="{{route('client.contact')}}" class="nav-link">Контакты</a></li>
 
-                    <li class="nav-item {{(Request::is('shop') ? 'active' : '')}}"><a
-                                href="{{route('client.shop')}}" class="nav-link">Магазин</a></li>
+{{--                    <li class="nav-item {{(Request::is('shop') ? 'active' : '')}}"><a--}}
+{{--                                href="{{route('client.shop')}}" class="nav-link">Магазин</a></li>--}}
                 </ul>
             </div>
         </div>
     </nav>
     <!-- END nav -->
+    <?php
+    use App\Models\AboutUs;
+    $main_image = AboutUs::where('type',AboutUs::MAIN_IMAGE)->first();
+    ?>
     <div class="hero-wrap hero-wrap-2"
-         style="background-image: url({{asset('/client/tennis.jpg')}}); background-position: 50% 0%;"
+         style="background-image: url({{asset($main_image->description)}}); background-position: 50% 10%;"
          data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">

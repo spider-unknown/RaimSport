@@ -31,7 +31,7 @@ class FileServiceImpl implements FileService
 
     public function remove(string $path)
     {
-        if ($path != StaticConstants::DEFAULT_IMAGE) {
+        if ($path != StaticConstants::DEFAULT_IMAGE && $path != StaticConstants::DEFAULT_IMAGE_MAIN) {
             if (file_exists($path) && !is_dir($path)) {
                 return unlink($path);
             }
@@ -42,7 +42,8 @@ class FileServiceImpl implements FileService
 
     public function updateWithRemoveOrStore(UploadedFile $image, string $path, string $oldFilePath = null): string
     {
-        if ($oldFilePath && $oldFilePath != StaticConstants::DEFAULT_IMAGE) {
+        if ($oldFilePath && $oldFilePath != StaticConstants::DEFAULT_IMAGE &&
+            $oldFilePath != StaticConstants::DEFAULT_IMAGE_MAIN) {
             $this->remove($oldFilePath);
         }
         return $this->store($image, $path);
