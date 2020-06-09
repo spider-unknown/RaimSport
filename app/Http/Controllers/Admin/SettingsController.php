@@ -20,11 +20,12 @@ class SettingsController extends WebBaseController
     public function edit()
     {
 
-        $main = AboutUs::where('type',AboutUs::MAIN)->first();
-        $childs = AboutUs::where('type',AboutUs::CHILD)->get();
-        $counts = AboutUs::where('type',AboutUs::COUNT_CHILD)->get();
-        $main_image = AboutUs::where('type',AboutUs::MAIN_IMAGE)->first();
-        $about_us = AboutUs::where('type',AboutUs::ABOUT_US)->first();
+        $settings = AboutUs::all();
+        $main = $settings->where('type',AboutUs::MAIN)->first();
+        $childs = $settings->where('type',AboutUs::CHILD);
+        $counts = $settings->where('type',AboutUs::COUNT_CHILD);
+        $main_image = $settings->where('type',AboutUs::MAIN_IMAGE)->first();
+        $about_us = $settings->where('type',AboutUs::ABOUT_US)->first();
 
         return view('admin.settings.edit', compact('main','childs','counts', 'main_image', 'about_us'));
 
@@ -33,11 +34,12 @@ class SettingsController extends WebBaseController
     public function update(Request $request)
     {
 
-        $main = AboutUs::where('type',AboutUs::MAIN)->first();
-        $main_image = AboutUs::where('type',AboutUs::MAIN_IMAGE)->first();
-        $about_us = AboutUs::where('type',AboutUs::ABOUT_US)->first();
-        $childs = AboutUs::where('type',AboutUs::CHILD)->get();
-        $counts = AboutUs::where('type',AboutUs::COUNT_CHILD)->get();
+        $settings = AboutUs::all();
+        $main = $settings->where('type',AboutUs::MAIN)->first();
+        $childs = $settings->where('type',AboutUs::CHILD);
+        $counts = $settings->where('type',AboutUs::COUNT_CHILD);
+        $main_image = $settings->where('type',AboutUs::MAIN_IMAGE)->first();
+        $about_us = $settings->where('type',AboutUs::ABOUT_US)->first();
 
         $main->update([
             'title' => $request->input("title"),
