@@ -11,7 +11,7 @@
                                         <a class="@if($categoryId == $category->id) text-white @endif"
                                            href="{{route('client.branch', ['categoryId' => $category->id,
                                        'id' => $branch->id])}}">{{$category->name}}</a>
-                                        @if($category->products)
+                                        @if(!$category->products->isEmpty())
                                             <a href="#" data-toggle="dropdown">
                                                 <span class="fa fa-caret-down @if($categoryId == $category->id) bg-primary text-white @endif"></span></a>
                                             <ul class="dropdown-menu">
