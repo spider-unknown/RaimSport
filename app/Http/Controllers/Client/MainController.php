@@ -163,16 +163,24 @@ class MainController extends WebBaseController
     }
 
     public function branch($id, Request $request) {
-        $branch = Branch::where('id', $id)->where('is_visible', true)->first();
+        $branch = Branch::where('id', $id)->where('is_visible', true)->with('categories.products')->first();
         $categories = $branch->categories;
         $currentCategory = null;
         $categoryId = null;
-        $projects = array();
+        $products = array();
+        $currentProduct = null;
+        $productId = null;
         if($request->categoryId) {
             $categoryId = $request->categoryId;
             $currentCategory =  $categories->where('id', $categoryId)->first();
-            $projects = Project::where('category_id', $categoryId)->where('is_visible', true)->get();
+            $products = $currentCategory->products;
         }
-        return view('client.branch', compact('categories', 'branch', 'currentCategory', 'categoryId', 'projects'));
+        if($request->productId) {
+            $productId = $request->productId;
+            $currentProduct =  Product::where('id', $productId)->first();
+        }
+        return view('client.branch', compact('categories', 'branch',
+            'currentCategory', 'categoryId', 'products', 'currentProduct', 'productId'
+        ));
     }
 }

@@ -33,12 +33,12 @@
                 <p>Новости</p>
             </a>
         </li>
-        <li class="nav-item {{{ (Request::is('admin/services') ? 'active' : '') }}}">
-            <a class="nav-link" href="{{route('service.index')}}">
-                <i class="material-icons">free_breakfast</i>
-                <p>Услуги</p>
-            </a>
-        </li>
+{{--        <li class="nav-item {{{ (Request::is('admin/services') ? 'active' : '') }}}">--}}
+{{--            <a class="nav-link" href="{{route('service.index')}}">--}}
+{{--                <i class="material-icons">free_breakfast</i>--}}
+{{--                <p>Услуги</p>--}}
+{{--            </a>--}}
+{{--        </li>--}}
         <li class="nav-item {{{ (Request::is('admin/notes') ? 'active' : '') }}}">
             <a class="nav-link" href="{{route('note.index')}}">
                 <i class="material-icons">comment</i>

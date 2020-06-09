@@ -14,7 +14,8 @@
         <label class="bmd-label-floating" for="branch_id">Ветка</label>
             <select class="form-control" name="branch_id" id="branch_id" required>
                 @foreach($branches as $branch)
-                    <option value="{{$branch->id}}">{{$branch->name}}</option>
+                    <option {{$category ? ($category->branch_id ==
+                    $branch->id ? ' selected ': '') : ''}} value="{{$branch->id}}">{{$branch->name}}</option>
                 @endforeach
             </select>
 
