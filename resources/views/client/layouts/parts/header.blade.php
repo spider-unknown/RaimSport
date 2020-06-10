@@ -1,4 +1,4 @@
-<div class="wrap ftco-navbar-light-transparent">
+<div class="wrap  bg-dark ftco-navbar-light">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-3 d-flex align-items-center">
