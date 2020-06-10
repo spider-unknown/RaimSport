@@ -120,7 +120,7 @@ Route::group(['namespace' => 'Client'], function () {
     Route::get('/bot-test', ['uses' => 'MainController@botTest', 'as' => 'client.bot']);
     Route::get('/bot-test', ['uses' => 'MainController@botTest', 'as' => 'client.bot']);
     Route::post('/bot/send/request', ['uses' => 'MainController@sendTelegram', 'as' => 'client.bot.send']);
-
+    Route::get('/calculator', ['uses' => 'MainController@calculator', 'as' => 'client.calculator']);
     Route::get('shop', ['uses' => 'MainController@shop', 'as' => 'client.shop']);
     Route::get('product/{id}', ['uses' => 'MainController@itemSingle', 'as' => 'client.shop.single'])->where('id', '[0-9]+');
     Route::post('/bot/send/contact/us', ['uses' => 'MainController@sendTelegramTheme', 'as' => 'client.bot.send.contact']);

@@ -66,6 +66,13 @@ class MainController extends WebBaseController
         return view('client.contact');
     }
 
+    public function calculator()
+    {
+        $blogs = Blog::all();
+
+        return view('client.calculator',compact('blogs'));
+    }
+
     public function blogSingle($id)
     {
         $blog = Blog::find($id);
