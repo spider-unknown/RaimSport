@@ -6,7 +6,10 @@
                     <div class="d-flex align-items-center justify-content-center">
                         <img style="width: auto; height: 40px;" src="{{asset('client/raimsport.png')}}" alt="Raimsport">
                     </div>
-                    Raimsport</a>
+                    <span class="text-dark mt-2 d-none d-lg-block">
+                        Raimsport
+                    </span>
+                </a>
             </div>
             <div class="col-3 d-flex justify-content-end align-items-center">
                 <div class="social-media">
