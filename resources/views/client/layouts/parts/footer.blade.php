@@ -5,12 +5,12 @@
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="logo"><a href="#"><span class="fa fa-sport mr-2"></span>Raimsport</a></h2>
                     <p>Будь первым вместе с нами.</p>
-                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
-                        <li class="ftco-animate"><a href="#"><span class="fa fa-telegram"></span></a></li>
-                        <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                        <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-                        <li class="ftco-animate"><a href="#"><span class="fa fa-vk"></span></a></li>
-                    </ul>
+                    {{--<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">--}}
+                        {{--<li class="ftco-animate"><a href="#"><span class="fa fa-telegram"></span></a></li>--}}
+                        {{--<li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>--}}
+                        {{--<li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>--}}
+                        {{--<li class="ftco-animate"><a href="#"><span class="fa fa-vk"></span></a></li>--}}
+                    {{--</ul>--}}
                 </div>
             </div>
             <div class="col-md-6 col-lg">
