@@ -3,7 +3,8 @@
 @section('styles')
     <style>
         .info {
-            overflow-wrap: break-word;
+            /*overflow-wrap: break-word;*/
+            word-wrap: break-word;
         }
     </style>
 @endsection
