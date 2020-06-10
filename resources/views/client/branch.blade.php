@@ -1,13 +1,5 @@
 @extends('client.layouts.client')
 
-@section('styles')
-    <style>
-        .info > * {
-            overflow-wrap: break-word;
-            word-wrap: break-word;
-        }
-    </style>
-@endsection
 @section('content')
     <section class="ftco-section">
         <div class="container">
