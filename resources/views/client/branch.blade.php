@@ -2,7 +2,7 @@
 
 @section('styles')
     <style>
-        .info {
+        .info > * {
             overflow-wrap: break-word;
             word-wrap: break-word;
         }
