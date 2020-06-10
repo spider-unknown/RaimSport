@@ -8034,6 +8034,9 @@ h1, h2, h3, h4, h5,
       right: 0;
       z-index: 3;
       background: transparent; } }
+.ftco-navbar-light-transparent {
+  background-color: rgba(217, 90, 148, 0.27);
+}
 
 .ftco-navbar-light {
   background: #fff !important;

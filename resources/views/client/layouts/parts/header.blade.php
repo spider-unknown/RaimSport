@@ -1,4 +1,4 @@
-<div class="wrap  bg-dark ftco-navbar-light">
+<div class="wrap ftco-navbar-light-transparent">
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-3 d-flex align-items-center">
@@ -11,7 +11,8 @@
             <div class="col-3 d-flex justify-content-end align-items-center">
                 <div class="social-media">
                     <p class="mb-0 d-flex">
-                        <a href="https://api.whatsapp.com/send?phone=77071997060" class="d-flex align-items-center justify-content-center"><span
+                        <a href="https://api.whatsapp.com/send?phone=77071997060"
+                           class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-whatsapp"><i class="sr-only">WhatsApp</i></span></a>
                         {{--<a href="#" class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-telegram"><i class="sr-only">Instagram</i></span></a>--}}
@@ -30,9 +31,9 @@
                     aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fa fa-bars"></span> Меню
             </button>
-{{--            <div class="req-button order-lg-last">--}}
-{{--                <a href="{{route('client.index')}}">Оставить заявку</a>--}}
-{{--            </div>--}}
+            {{--            <div class="req-button order-lg-last">--}}
+            {{--                <a href="{{route('client.index')}}">Оставить заявку</a>--}}
+            {{--            </div>--}}
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item {{(Request::is('/') ? 'active' : '')}}"><a
@@ -42,20 +43,21 @@
                                 href="{{route('client.about')}}" class="nav-link">О компании</a></li>
                     @foreach(App\Models\Branch::where('is_visible', true)->limit(4)->get() as $branch)
                         <li class="nav-item {{(Request::is('branch/'. $branch->id) ? 'active' : '')}}"><a
-                                href="{{route('client.branch', ['id' => $branch->id])}}" class="nav-link">{{$branch->name_in_menu}}</a></li>
+                                    href="{{route('client.branch', ['id' => $branch->id])}}"
+                                    class="nav-link">{{$branch->name_in_menu}}</a></li>
                     @endforeach
 
                     <li class="nav-item {{(Request::is('project') ? 'active' : '')}}"><a
                                 href="{{route('client.project')}}" class="nav-link">Проекты</a></li>
 
-{{--                    <li class="nav-item {{(Request::is('blog') ? 'active' : '')}}"><a--}}
-{{--                                href="{{route('client.blog')}}" class="nav-link">Блог</a></li>--}}
+                    {{--                    <li class="nav-item {{(Request::is('blog') ? 'active' : '')}}"><a--}}
+                    {{--                                href="{{route('client.blog')}}" class="nav-link">Блог</a></li>--}}
 
                     <li class="nav-item {{(Request::is('contact') ? 'active' : '')}}"><a
                                 href="{{route('client.contact')}}" class="nav-link">Контакты</a></li>
 
-{{--                    <li class="nav-item {{(Request::is('shop') ? 'active' : '')}}"><a--}}
-{{--                                href="{{route('client.shop')}}" class="nav-link">Магазин</a></li>--}}
+                    {{--                    <li class="nav-item {{(Request::is('shop') ? 'active' : '')}}"><a--}}
+                    {{--                                href="{{route('client.shop')}}" class="nav-link">Магазин</a></li>--}}
                 </ul>
             </div>
         </div>
@@ -63,7 +65,7 @@
     <!-- END nav -->
     <?php
     use App\Models\AboutUs;
-    $main_image = AboutUs::where('type',AboutUs::MAIN_IMAGE)->first();
+    $main_image = AboutUs::where('type', AboutUs::MAIN_IMAGE)->first();
     ?>
     <div class="hero-wrap hero-wrap-2"
          style="background-image: url({{asset($main_image->description)}}); background-position: 50% 10%;"
