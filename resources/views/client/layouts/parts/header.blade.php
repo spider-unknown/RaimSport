@@ -17,7 +17,7 @@
                         <a href="https://t.me/Serzhan02" class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-telegram"><i class="sr-only">Instagram</i></span></a>
                         <a href="tel:+77071997060" class="d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-phone"><i class="sr-only">Instagram</i></span></a>
+                                    class="fa fa-phone"><i class="sr-only">Phone</i></span></a>
                     </p>
                 </div>
             </div>
