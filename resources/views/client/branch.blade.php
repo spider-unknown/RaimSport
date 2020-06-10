@@ -3,7 +3,7 @@
     <section class="ftco-section">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3 col-md-4 col-12">
                     <ul class="list-group">
                         @foreach($categories as $category)
                                 <li class="list-group-item @if($categoryId == $category->id) bg-primary text-white @endif">
@@ -28,7 +28,7 @@
                         @endforeach
                     </ul>
                 </div>
-                <div class="col-9">
+                <div class="col-lg-9 col-md-8 col-12">
                     <div class="container">
                         @if(!$currentProduct)
                             <div class="col-lg-9 order-lg-last ftco-animate">
