@@ -14,8 +14,10 @@
                         <a href="https://api.whatsapp.com/send?phone=77071997060"
                            class="d-flex align-items-center justify-content-center"><span
                                     class="fa fa-whatsapp"><i class="sr-only">WhatsApp</i></span></a>
-                        {{--<a href="#" class="d-flex align-items-center justify-content-center"><span
-                                    class="fa fa-telegram"><i class="sr-only">Instagram</i></span></a>--}}
+                        <a href="https://t.me/Serzhan02" class="d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-telegram"><i class="sr-only">Instagram</i></span></a>
+                        <a href="tel:+77071997060" class="d-flex align-items-center justify-content-center"><span
+                                    class="fa fa-phone"><i class="sr-only">Instagram</i></span></a>
                     </p>
                 </div>
             </div>
