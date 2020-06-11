@@ -17,7 +17,6 @@
 <script src="{{asset('js/toastr.js')}}"></script>
 <script src="{{'client/js/jquery.steps.js'}}"></script>
 <script src="{{'client/js/jquery.steps.min.js'}}"></script>
-{{--<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>--}}
 
 
 
@@ -42,52 +41,6 @@
     @endif
 
 </script>
-<script>
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks the button, open the modal
 
 
-    // When the user clicks on <span> (x), close the modal
-    // span.onclick = function() {
-    //     modal.style.display = "none";
-    // };
-
-    // When the user clicks anywhere outside of the modal, close it
-
-    var form = $("#example-form");
-    form.validate({
-        errorPlacement: function errorPlacement(error, element) { element.before(error); },
-        rules: {
-            confirm: {
-                equalTo: "#password"
-            }
-        }
-    });
-    form.children("div").steps({
-        headerTag: "h3",
-        bodyTag: "section",
-        transitionEffect: "slideLeft",
-        onStepChanging: function (event, currentIndex, newIndex)
-        {
-            form.validate().settings.ignore = ":disabled,:hidden";
-            return form.valid();
-        },
-        onFinishing: function (event, currentIndex)
-        {
-            form.validate().settings.ignore = ":disabled";
-            return form.valid();
-        },
-        onFinished: function (event, currentIndex)
-        {
-            modal.style.display = "block";
-        }
-    });
-</script>
 @yield('scripts')
