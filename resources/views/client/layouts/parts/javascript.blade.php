@@ -17,7 +17,7 @@
 <script src="{{asset('js/toastr.js')}}"></script>
 <script src="{{'client/js/jquery.steps.js'}}"></script>
 <script src="{{'client/js/jquery.steps.min.js'}}"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+{{--<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>--}}
 
 
 
