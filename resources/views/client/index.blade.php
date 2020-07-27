@@ -52,8 +52,8 @@
                                                 <div class="icon"><span class="fa fa-chevron-down"></span></div>
                                                 <select name="service" id="" class="form-control">
                                                     <option value="test">Выберите услугу</option>
-                                                    @foreach($services_all as $service)
-                                                        <option value="{{$service->title}}">{{$service->title}}</option>
+                                                    @foreach($categories as $category)
+                                                        <option value="{{$category->name}}">{{$category->name}}</option>
                                                     @endforeach
                                                 </select>
                                             </div>

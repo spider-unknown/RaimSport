@@ -25,6 +25,7 @@ class MainController extends WebBaseController
     public function index()
     {
         $services_all = Service::all();
+        $categories = Category::where('is_visible', true)->get();
         $projects = Project::where('is_visible', true)->limit(8)->get();
         $notes = Note::orderBy('created_at', 'desc')->limit(5)->get();
         $blogs = Blog::orderBy('created_at', 'desc')->limit(3)->get();
@@ -35,7 +36,7 @@ class MainController extends WebBaseController
         $counts = $settings->where('type',AboutUs::COUNT_CHILD);
 
         return view('client.index', compact('projects', 'services_all', 'notes', 'blogs',
-            'main', 'childs', 'counts'));
+            'main', 'childs', 'counts', 'categories'));
     }
 
     public function service($id)
