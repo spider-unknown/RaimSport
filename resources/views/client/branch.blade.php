@@ -48,8 +48,8 @@
                                     <div class="row d-flex">
                                         @foreach($products as $product)
                                             <a href="{{route('client.branch', ['categoryId' => $category->id,
-                                                        'id' => $branch->id, 'productId' => $product->id])}}">
-                                                <div class="col-md-4 mb-4 d-flex ftco-animate">
+                                                        'id' => $branch->id, 'productId' => $product->id])}}"
+                                            class="col-md-4 mb-4 d-flex ftco-animate">
                                                     <div class="card" style="width: 30rem;">
                                                         <img class="card-img-top" src="{{asset($product->img_path)}}"
                                                              alt="Card image cap">
@@ -60,7 +60,6 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
                                             </a>
                                         @endforeach
                                     </div>
